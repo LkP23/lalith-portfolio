@@ -1,56 +1,48 @@
-# Lalith Parsa
-📍 4248 Fairfax Circle Apt3, Nevada, Las Vegas 89119  
-📞 (248) 907-3625  
-📧 [LalithPrakash46@gmail.com](mailto:LalithPrakash46@gmail.com)
+# LALITH PARSA
 
-## About Me
-Data Analyst with a strong foundation in computer science and a specialization in Data Analytics. Experienced in end-to-end data management, developing machine learning models, and crafting actionable insights through advanced data analysis and visualization.
+**Address:** 4248 Fairfax CIr Apt 3, Las Vegas, NV 89119  
+**Phone:** (248)907-3625  
+**Email:** [lalithprakash46@gmail.com](mailto:lalithprakash46@gmail.com)
 
-## 🎓 Education
-- **Master’s in Computer Science**  
-  Grand Valley State University, 2021 - 2023  
-  Specialization in Data Analytics track  
+## PROFESSIONAL EXPERIENCE
 
-- **Bachelor of Technology in Information Technology**  
-  CVR College of Engineering, India, 2015-2019  
-
-## 💼 Professional Experience
-### Atos|Syntel, India, Pune — Associate Consultant
+### Atos|Syntel, Pune, India — Associate Consultant
 _Oct 2019 - Aug 2021_
-#### FedEx Air Project:
-- Orchestrated end-to-end data flow management and ensured data integrity through rigorous testing using Oracle and SQL tools.
-- Championed Agile methodologies, ensuring adaptability and alignment with evolving project requirements.
 
-#### FedEx Label Verification Project:
-- Engineered a QR code system for efficient package data retrieval and validated data against backend records.
-- Ensured real-time synchronization between scanned QR codes and database entries through close collaboration with the backend team.
+- **FedEx Air Project:** Spearheaded data flow management using Oracle and SQL, optimizing data integrity. Delivered timely project updates and agile responses to stakeholder requirements.
+- **FedEx Label Verification Project:** Implemented a QR code system integrated with a data warehouse, promoting accuracy in package data validation.
 
-## 🚀 Projects
-### Food Recommendation System
-- Developed a Flask-powered app that uses advanced text processing techniques to recommend recipes based on user ingredients.
+## EDUCATION
 
-### Crop Recommendation and Yield Prediction System
-- Designed a Python-based machine learning tool that assists farmers in selecting optimal crops based on environmental data and enhances yield predictions through dual algorithms.
+**Master’s in Computer Science**  
+_Grand Valley State University (2021 - 2023)_  
+_Specialization: Data Analytics_
 
-### [Cryptocurrency Analysis and Visualization](Dashboard_URL)
-- Created a comprehensive cryptocurrency dashboard in R, providing users with intuitive navigation and a holistic view of cryptocurrency performance and market trends.
+**Bachelor of Technology in Information Technology**  
+_CVR College of Engineering, India (2015-2019)_
 
-### Video Game Sales Analysis Dashboard
-- Developed a Tableau dashboard that provides actionable insights into global video game sales, aiding developers in formulating effective game strategies.
+## PROJECTS
 
-### Netflix User Preferences and Content Trends
-- Utilized Kaggle data to analyze Netflix user preferences and proposed strategies to optimize content and boost user engagement.
+- **Food Recommendation System:** Developed a Flask application optimizing user food preferences through text analysis.
+- **Crop Recommendation & Yield Prediction:** Established a Python ML tool leveraging environmental data for enhanced crop predictions.
+- **Cryptocurrency Analysis & Visualization:** Formulated an [interactive R dashboard](https://rpubs.com/Parsal05/844546) presenting detailed cryptocurrency trends.
+- **Video Game Sales Analysis:** Utilized Tableau for in-depth analysis of video game sales across multiple platforms.
+- **Netflix User Trends:** Analysed Netflix user data to derive insights for content strategies, aiming at heightened user engagement.
 
-## 🛠 Skills
-- **Programming & Web Development:** Python, R, JavaScript, HTML, CSS, Flask
-- **Data Analytics & Machine Learning:** Statistics, Data Preparation, Pandas, Numpy, sci-kit-learn, Random Forest, Neural Networks, Regression, Classification
-- **Natural Language & Systems:** NLP, Chatbot Development, Recommendation Systems, Similarity Search, Text Data Preparation
-- **Database Management:** SQL, Relational Database Concepts
-- **Data Visualization & BI Tools:** Tableau, Microsoft Power BI, Seaborn, Matplotlib
+## SKILLS
 
-## 🏆 Certifications
-- Associate Data Analyst, Data Camp
-- Graduate Level Badge in Data Analysis, Grand Valley State University
-- Certified in Pega (CSA v7.2 & CSSA v7.4)
-- Certified in Kore.ai chatbot development with advanced integrations
-- Pursuing Certification in SalesForce, Power BI, and AWS Associate Solution Architect
+- **Data Visualization & BI Tools:** Mastery in Tableau, Qlik, and Power BI. Proficient in Seaborn and Matplotlib.
+- **Data Analytics & Machine Learning:** Versed in scikit-learn models, including RandomForest and Neural Network.
+- **Business Intelligence:** Comprehensive background in deriving insights from large datasets tailored to business objectives.
+- **Database Management:** Strong understanding of SQL, relational database principles, and data warehouse management.
+- **Programming & Web Development:** Python, R, JavaScript, HTML, CSS, Flask.
+- **Innovation & Implementation:** Record of introducing innovative enterprise solutions enhancing system performance.
+
+## CERTIFICATIONS
+
+- Data Camp - Associate Data Analyst
+- Grand Valley State University - Graduate Level Badge in Data Analysis
+- Pega - CSA v7.2 & CSSA v7.4
+- Kore.ai - Chatbot Development with Advanced Integrations
+- SalesForce & Power BI - Ongoing Certifications
+- AWS - Associate Solution Architect (In Progress)
