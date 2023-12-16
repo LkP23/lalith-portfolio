@@ -1,48 +1,73 @@
-# LALITH PARSA
+# Lalith Parsa
 
-**Address:** 4248 Fairfax CIr Apt 3, Las Vegas, NV 89119  
-**Phone:** (248)907-3625  
-**Email:** [lalithprakash46@gmail.com](mailto:lalithprakash46@gmail.com)
+- (248) 907-3625
+- lalithprakash46@gmail.com
+- [4248 Fairfax Cir Apt 3, Las Vegas, NV 89119](https://github.com/LkP23)
+- [GitHub](https://github.com/LkP23)
 
-## PROFESSIONAL EXPERIENCE
+## Objective
 
-### Atos|Syntel, Pune, India — Associate Consultant
-_Oct 2019 - Aug 2021_
+A versatile Computer Science graduate with a specialization in Data Analytics and Machine Learning, eager to leverage expertise in cloud computing and data engineering in a dynamic role.
 
-- **FedEx Air Project:** Spearheaded data flow management using Oracle and SQL, optimizing data integrity. Delivered timely project updates and agile responses to stakeholder requirements.
-- **FedEx Label Verification Project:** Implemented a QR code system integrated with a data warehouse, promoting accuracy in package data validation.
+## Education
 
-## EDUCATION
+**Master's in Computer Science** (2021 - 2023)  
+Grand Valley State University  
+Specialization in Data Analytics track
 
-**Master’s in Computer Science**  
-_Grand Valley State University (2021 - 2023)_  
-_Specialization: Data Analytics_
+**Bachelor of Technology in Information Technology** (2015-2019)  
+CVR College of Engineering, India
 
-**Bachelor of Technology in Information Technology**  
-_CVR College of Engineering, India (2015-2019)_
+## Skills
 
-## PROJECTS
+### Programming Languages
+- Python, R, Java
 
-- **Food Recommendation System:** Developed a Flask application optimizing user food preferences through text analysis.
-- **Crop Recommendation & Yield Prediction:** Established a Python ML tool leveraging environmental data for enhanced crop predictions.
-- **Cryptocurrency Analysis & Visualization:** Formulated an [interactive R dashboard](https://rpubs.com/Parsal05/844546) presenting detailed cryptocurrency trends.
-- **Video Game Sales Analysis:** Utilized Tableau for in-depth analysis of video game sales across multiple platforms.
-- **Netflix User Trends:** Analysed Netflix user data to derive insights for content strategies, aiming at heightened user engagement.
+### Big Data Technologies
+- Hadoop, Spark, Kafka
 
-## SKILLS
+### Cloud Computing Platforms
+- AWS
 
-- **Data Visualization & BI Tools:** Mastery in Tableau, Qlik, and Power BI. Proficient in Seaborn and Matplotlib.
-- **Data Analytics & Machine Learning:** Versed in scikit-learn models, including RandomForest and Neural Network.
-- **Business Intelligence:** Comprehensive background in deriving insights from large datasets tailored to business objectives.
-- **Database Management:** Strong understanding of SQL, relational database principles, and data warehouse management.
-- **Programming & Web Development:** Python, R, JavaScript, HTML, CSS, Flask.
-- **Innovation & Implementation:** Record of introducing innovative enterprise solutions enhancing system performance.
+### Database Management
+- MySQL, MongoDB, Redis
 
-## CERTIFICATIONS
+### Data Warehousing
+- AWS Redshift
 
-- Data Camp - Associate Data Analyst
-- Grand Valley State University - Graduate Level Badge in Data Analysis
-- Pega - CSA v7.2 & CSSA v7.4
-- Kore.ai - Chatbot Development with Advanced Integrations
-- SalesForce & Power BI - Ongoing Certifications
-- AWS - Associate Solution Architect (In Progress)
+### ETL Tools
+- Apache NiFi, Talend
+
+### Data Pipeline Management
+- Airflow
+
+### Version Control
+- Git
+
+### Machine Learning
+- TensorFlow, scikit-learn
+
+### Business Intelligence Tools
+- Power BI, Tableau
+
+## Experience
+
+### Associate Consultant (Oct 2019 - Aug 2021)
+Atos|Syntel, India, Pune
+- Lead data flow management using Oracle and SQL Server, optimizing data integrity for FedEx Air.
+- Implemented a web-based QR code system integrated with a data warehouse for FedEx Label Verification.
+
+## Highlighted Projects
+
+### Global ETL Data Integration for Walmart
+- Directed the construction of an ETL data pipeline with SQL and Python, integrating retail data across global operations.
+
+### Cryptocurrency Market Analysis Dashboard
+- Created a R Flexi dashboard for analysis and visualization of cryptocurrency market dynamics. [View Project](https://rpubs.com/Parsal05)
+
+## Certifications
+
+- [Data Camp - Associate Data Engineer](https://www.datacamp.com/certificate/DEA0014211701870)
+- [Data Camp - Associate Data Analyst](https://www.datacamp.com/certificate/DAA0012120884633)
+- [Graduate Level Badge in Data Analysis](https://www.linkedin.com/in/parsalalith/details/certifications/)
+- AWS - Solution Architect (In Progress)
