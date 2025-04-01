@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Lalith Parsa
 
-![GitHub Banner](https://github.com/LkP23/banner-placeholder.png)
+
 
 🚀 Full-Stack Developer | Cloud-Native Engineer | MERN & Java Enthusiast | Data Analyst
 
