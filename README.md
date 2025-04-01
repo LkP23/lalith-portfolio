@@ -1,97 +1,95 @@
-# Hi, I'm Lalith Parsa 👋
+# 👋 Hi, I'm Lalith Parsa
 
-## 🚀 About Me
-I'm an accomplished **Software Engineer** with over 4 years of experience in developing scalable, high-performance web applications and services. My expertise lies in **Node.js**, **Java**, **React**, and the **MERN Stack**, enabling me to design and implement cutting-edge solutions for dynamic industries. 
+![GitHub Banner](https://github.com/LkP23/banner-placeholder.png)
 
-## 🛠️ Technical Skills
-- **Programming Languages:** Node.js, Java, JavaScript, TypeScript, Python, SQL, C++, Go.
-- **Frameworks:** Express.js, Spring Boot, React, Redux, Angular, Next.js.
-- **Databases:** MongoDB, Cassandra, Redis, PostgreSQL, MySQL, Oracle.
-- **Cloud/DevOps:** AWS, GCP, Docker, Kubernetes, Jenkins, Terraform.
-- **Web Services:** RESTful APIs, GraphQL, WebSocket.
-- **Testing Tools:** JUnit, Mocha, Chai, Jest, Cypress.
-- **Version Control:** Git, GitHub, GitLab.
+🚀 Full-Stack Developer | Cloud-Native Engineer | MERN & Java Enthusiast | Data Analyst
 
-## 💼 Professional Experience
+---
 
-### Cox Communications, TX (Remote)
-**Node.js Developer**  
-*Apr 2024 – Present*  
-- Designed and implemented RESTful APIs with Node.js and Express.js, facilitating seamless data integration.
-- Built reusable React components and integrated Redux for state management, enhancing front-end efficiency.
-- Developed scalable microservices with Spring Boot and Node.js for core backend functionality.
-- Optimized database queries with MongoDB and PostgreSQL, improving data retrieval speeds by 30%.
-- Leveraged Docker and Kubernetes to containerize applications, ensuring streamlined deployment processes.
-- Automated logging and monitoring using ELK Stack (Elasticsearch, Logstash, and Kibana), reducing troubleshooting time by 40%.
-- Integrated GraphQL services to enable efficient querying of complex datasets, improving API performance.
+## 💡 About Me
 
-### Kirk Kerkorian School of Medicine, UNLV
-**Full Stack Developer**  
-*Nov 2023 – Feb 2024*  
-- Developed custom solutions using Node.js and React to optimize medical research workflows.
-- Designed and deployed RESTful APIs for internal applications, improving interoperability.
-- Enhanced data processing using MongoDB and integrated cloud storage solutions on AWS.
-- Improved performance by implementing server-side caching using Redis, reducing API response time by 50%.
+I’m a passionate and versatile **Software Engineer** with over **4 years of hands-on experience** building scalable backend systems, real-time dashboards, and full-stack web applications. From **Node.js & Java microservices** to **React dashboards** and **cloud-native deployments on AWS/GCP**, I thrive at the intersection of software, data, and DevOps.
 
-### General Motors, Irving, TX
-**MERN Stack Developer**  
-*July 2023 – Oct 2023*  
-- Built dynamic Single Page Applications (SPAs) using React and Node.js for vehicle showcase platforms.
-- Used GraphQL and Apollo Server to streamline API queries, improving data fetching efficiency.
-- Developed containerized applications using Docker and orchestrated services with Kubernetes.
-- Migrated critical modules from monolithic architecture to microservices, reducing downtime and improving maintainability.
+🔭 Currently working at **Cox Communications** developing robust APIs and data platforms for digital transformation.
 
-### Atos Syntel, Pune, India
-**Associate Consultant**  
-*Oct 2018 – Aug 2021*  
-- Developed Java-based APIs for enterprise systems, focusing on modularity and performance.
-- Built microservices using Spring Boot and integrated NoSQL databases like Cassandra for scalability.
-- Automated build and deployment pipelines using Maven and Jenkins, reducing release cycles by 20%.
+🎓 I hold a **Master’s in Computer Science (Data Analytics track)** from Grand Valley State University, USA.
 
-## 🎓 Education
-- **Master's in Computer Science:** Grand Valley State University, USA (May 2023)
-- **Bachelor's in Information Technology:** CVR College of Engineering, India (May 2019)
+---
 
-## 🌐 Connect With Me
-- **GitHub:** [LkP23](https://github.com/LkP23)
-- **LinkedIn:** [Lalith Parsa](https://linkedin.com/in/parsalalith)
-- **Email:** [lalithprakash46@gmail.com](mailto:lalithprakash46@gmail.com)
+## 🛠️ Tech Stack
 
+**Languages:** `Node.js` `Java` `JavaScript` `Python` `SQL` `C++` `Go`  
+**Frameworks:** `Spring Boot` `Express.js` `React` `Redux` `Next.js` `Angular`  
+**Databases:** `MongoDB` `PostgreSQL` `MySQL` `Redis` `Cassandra`  
+**Cloud Platforms:** `AWS` `GCP` `Docker` `Kubernetes` `Terraform`  
+**DevOps Tools:** `GitHub Actions` `Jenkins` `GitLab CI`  
+**Testing Tools:** `JUnit` `Jest` `Mocha` `Cypress`  
+**Data Tools:** `Pandas` `NumPy` `Tableau` `R` `Spark` `Airflow`  
 
-## Skills
-- **Statistical Analysis:** Regression, Hypothesis Testing, Data Modeling
-- **Programming Languages:** R, Python (Pandas, NumPy, SciPy)
-- **Data Visualization:** R (ggplot2), Python (Matplotlib, Seaborn), Tableau
-- **Machine Learning:** scikit-learn, TensorFlow, Keras
-- **Database Management:** SQL, MySQL, PostgreSQL
-- **Big Data Technologies:** Hadoop, Spark
-- **Data Manipulation Tools:** R (dplyr, tidyr), Python (Pandas)
-- **Version Control:** Git
-- **Statistical Software:** R Studio, SPSS, SAS
-- **Survey Design and Analysis:** Qualtrics, SurveyMonkey
-- **Business Intelligence Tools:** Power BI, Tableau
-- **Cloud Computing Platforms:** AWS (S3, EC2), Google Cloud Platform
-- **Data Pipeline Management:** Apache Airflow, Luigi
-- **Operating Systems:** Linux, Windows
-- **MS Excel:** PivotTable, VLOOKUP, Advanced Excel Functions and Visualization
-- **Report Writing and Presentation:** LaTeX, Markdown, Jupyter Notebooks
+---
 
-## Experience
-### Associate Consultant
-_Atos|Syntel, India, Pune_  
-_Oct 2019 - Aug 2021_
-- FedEx Air: Spearheaded data flow management using Oracle and SQL Server.
-- FedEx Label Verification: Worked on a web-based QR code system integrated with a data warehouse.
+## 📌 Featured Projects
 
-## Highlighted Projects
-- **Media & Entertainment:** Content Trend Analysis and User Engagement for Netflix.
-- **Culinary Technology:** Innovative Recipe Suggestion Application.
-- **Financial Analytics:** Cryptocurrency Market Analysis Dashboard. [View Project](https://rpubs.com/Parsal05)
-- **Urban Planning & Transportation:** Transportation Patterns Analysis in London.
-- **Retail Analytics & Data Engineering:** Global ETL Data Integration for Walmart.
+### 🔹 [real-time-analytics-dashboard](https://github.com/LkP23/real-time-analytics-dashboard)
+> Live dashboard built using React, WebSocket, Spring Boot & MongoDB Atlas  
+`React` `Redux` `Spring Boot` `WebSockets` `MongoDB` `Docker` `AWS`
 
-## Certifications
-- Data Camp - Associate Data Engineer
-- Graduate Level Badge in Data Analysis
-- Data Camp - Associate Data Analyst
-- AWS - Solution Architect (In Progress)
+---
+
+### 🔹 [mern-research-collab](https://github.com/LkP23/mern-research-collab)
+> Research platform for UNLV Medical School, real-time collaboration enabled  
+`MERN Stack` `SSO Auth` `AWS EC2` `Chart.js` `WebSocket`
+
+---
+
+### 🔹 [subscription-mgmt-api](https://github.com/LkP23/subscription-mgmt-api)
+> Scalable SaaS API using Java, Spring Boot, PostgreSQL & JWT/OAuth2  
+`Spring Boot` `PostgreSQL` `OAuth2` `Jenkins` `Swagger`
+
+---
+
+### 🔹 [legacy-to-microservices-refactor](https://github.com/LkP23/legacy-to-microservices-refactor)
+> Refactored legacy system to microservices with Docker + Kubernetes (Azure AKS)  
+`Spring Boot` `Microservices` `Azure AKS` `Config Server` `CI/CD`
+
+---
+
+### 🔹 [graphql-node-backend](https://github.com/LkP23/graphql-node-backend)
+> Built GraphQL API backend with Node.js, Apollo Server, and PostgreSQL  
+`Node.js` `GraphQL` `Apollo Server` `PostgreSQL` `Docker`
+
+---
+
+### 🔹 [react-component-library-lkp](https://github.com/LkP23/react-component-library-lkp)
+> Reusable React UI components built with Material-UI and Tailwind  
+`React` `Tailwind CSS` `Material-UI` `Storybook`
+
+---
+
+## 📊 Data & Analytics Projects
+
+📌 [Cryptocurrency Market Dashboard](https://rpubs.com/Parsal05)  
+📌 Netflix Content & Engagement Analysis  
+📌 Transportation Pattern Mining – London  
+📌 Walmart Global Retail ETL Integration  
+📌 AI-Driven Recipe Recommendation Engine
+
+---
+
+## 📚 Certifications
+
+- 🏅 DataCamp - Associate Data Analyst & Data Engineer  
+- 🎯 AWS Solution Architect (In Progress)
+
+---
+
+## 📫 Contact Me
+
+- 📧 [lalithprakash46@gmail.com](mailto:lalithprakash46@gmail.com)  
+- 💼 [LinkedIn](https://linkedin.com/in/parsalalith)  
+- 🌐 [GitHub](https://github.com/LkP23)
+
+---
+
+⭐ **Let’s build innovative, scalable, and intelligent solutions together.**  
+📍 Based in Dallas, TX | Open to remote & hybrid roles
