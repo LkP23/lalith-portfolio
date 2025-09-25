@@ -1,89 +1,114 @@
-# 👋 Hi, I'm Lalith Parsa
+# Lalith Krishna Prakash Parsa  
 
-🎓 PhD Applicant | Software Reliability & Analytics Researcher | Full-Stack Developer | Cloud-Native Engineer | Data Analyst
-
----
-
-## 💡 About Me
-
-I’m a versatile **Software Engineer and Data Analyst** with over **4 years of experience** building backend systems, analytics dashboards, and intelligent web applications. My work spans across **Java Spring Boot**, **React**, **cloud-native services on AWS/GCP**, and advanced **data modeling for research and engineering workflows**.
-
-- 🔍 Currently exploring research opportunities in **AI-powered software testing**, **static analysis**, and **LLM-based debugging**.
-- 📊 Passionate about solving problems at the intersection of software reliability, data engineering, and ML-driven tooling.
-- 🎓 Master's in Computer Science (Data Analytics track) from **Grand Valley State University, USA**.
-- 💼 Previously collaborated with academic teams at **UNLV School of Medicine** and built SaaS platforms in the telecom and finance domains.
+🎓 **PhD Aspirant in Computer Science**  
+🔬 Researcher in *Deep Learning · Computer Vision · Statistical Modeling · Applied ML in Healthcare & Finance*  
+💻 Software Engineer & Data Analyst with 4+ years of applied experience  
 
 ---
 
-## 🛠️ Tech Stack
+## 📘 About Me  
 
-**Languages:** `Java` `Python` `SQL` `JavaScript` `R` `Node.js` `C#`  
-**Frameworks:** `Spring Boot` `React` `Redux` `Next.js` `Express.js`  
-**Databases:** `PostgreSQL` `SQL Server` `MongoDB` `MySQL`  
-**Cloud Platforms:** `AWS (S3, EC2)` `GCP (BigQuery, Vertex AI)` `Azure AKS`  
-**DevOps:** `Docker` `GitHub Actions` `CI/CD` `Terraform`  
-**Data Tools:** `Pandas` `NumPy` `Power BI` `Tableau` `Apache Beam` `Airflow`  
-**ML/AI:** `scikit-learn` `GPT APIs` `TensorFlow`  
-**Testing:** `JUnit` `Postman` `Cypress`
+I integrate **software engineering** and **applied machine learning research** to build **scalable, interpretable, and domain-driven systems**.  
+
+- 🎓 Master’s in Computer Science (Data Analytics Track), Grand Valley State University, USA  
+- 🔬 Collaborated with **UNLV School of Medicine** on predictive healthcare analytics  
+- 💼 Applied experience in SaaS platforms, financial systems, and cloud-native engineering  
+- 🎯 Research Goal: Advance doctoral work in **AI architectures for healthcare, finance, and intelligent automation**  
 
 ---
 
-## 🔬 Research & Analytics Projects
+## 🔬 Research Projects  
 
-### 🔹 [Cryptocurrency Market Dashboard](https://rpubs.com/Parsal05)
-📈 Time-series analysis and volatility visualization using `R`, `Flexdashboard`, and public APIs.
+### 🍽️ Deep Learning–Based Food Recommendation System  
+**Abstract**: Developed a CNN-driven recommendation engine that extracts ingredient-level embeddings from food images to suggest personalized meals. The model clusters visually and semantically similar foods, supporting dietary management and nutrition planning.  
 
-### 🔹 [AI-Based Recipe Recommendation System](https://github.com/LkP23/llm-recipe-recommender)
-🍽️ GPT-based similarity scoring and ingredient parsing for personalized food suggestions.
+**Technical Details**  
+- Dataset: Curated Indian cuisine dataset with labeled ingredients  
+- Methods: CNN feature extraction · Cosine similarity clustering · Flask + React deployment  
+- Tools: TensorFlow, scikit-learn, Pandas  
 
-### 🔹 Netflix Engagement Study (Python & Tableau)
-🎥 Used clustering and data visualization to analyze viewer behavior and genre impact.
+**Impact**  
+Potential applications in **digital health**, **personalized nutrition**, and **dietary assistance**.  
 
-### 🔹 Transportation Data Mining – London
-🚊 Performed peak-hour forecasting with `SQL` + `Python` on public transit usage data.
-
-### 🔹 Walmart Global Retail ETL Simulation
-📦 Created a full-scale ETL pipeline using `GCP Dataflow`, `BigQuery`, and `Apache Beam`.
-
----
-
-## ⚙️ Software Projects
-
-### 🔹 [real-time-analytics-dashboard](https://github.com/LkP23/real-time-analytics-dashboard)
-> Dashboard built using `React`, `WebSocket`, `Spring Boot`, and `MongoDB`  
-🧠 Used in sales monitoring scenarios with live KPI feeds.
-
-### 🔹 [mern-research-collab](https://github.com/LkP23/mern-research-collab)
-> Secure collaboration platform for academic research teams  
-🔐 Features SSO Auth, document sync, and role-based access.
-
-### 🔹 [subscription-mgmt-api](https://github.com/LkP23/subscription-mgmt-api)
-> SaaS subscription API using `Spring Boot`, `OAuth2`, `PostgreSQL`
-
-### 🔹 [legacy-to-microservices-refactor](https://github.com/LkP23/legacy-to-microservices-refactor)
-> Refactored Java monolith into microservices using `Spring Cloud` and `Kubernetes`
-
-### 🔹 [graphql-node-backend](https://github.com/LkP23/graphql-node-backend)
-> GraphQL APIs for knowledge base apps with `Apollo Server` and `PostgreSQL`
+📸 Example Visualization  
+![Food Recommender CNN](projects/food-recommender/images/cnn_food.png)  
 
 ---
 
-## 📚 Certifications
+### 🚗 Obstacle Detection for Autonomous Driving (YOLOv5)  
+**Abstract**: Implemented a **real-time object detection and dynamic tracking pipeline** for autonomous driving systems. Optimized YOLOv5 with optical flow algorithms for embedded edge devices.  
 
-- 🎓 Google Cloud Training: Data Engineering with GCP  
-- 📊 Microsoft Certified: Power BI Data Analyst  
-- 🧠 DataCamp: Associate Data Analyst & Data Engineer  
-- 🛡️ AWS Solutions Architect (In Progress)
+**Technical Details**  
+- Dataset: Open Images Dataset + synthetic traffic images  
+- Methods: YOLOv5 object detection · Optical flow for motion tracking · Lane navigation logic  
+- Tools: PyTorch, OpenCV, TensorRT  
+
+**Impact**  
+Supports **low-latency ADAS systems** and **affordable autonomous navigation prototypes**.  
+
+📸 Example Visualization  
+![Autonomous Driving Detection](projects/autonomous-driving/images/yolo_autonomous.png)  
 
 ---
 
-## 📫 Contact Me
+### 🏥 Clinical Data Analytics – UNLV School of Medicine  
+**Abstract**: Conducted **predictive modeling and statistical analysis** on Electronic Medical Records (EMRs) to forecast patient outcomes. Delivered interactive Tableau dashboards for physician decision support.  
+
+**Technical Details**  
+- Models: Logistic regression · Survival analysis · Clustering  
+- Tools: R, SPSS, Tableau, Python (pandas & scikit-learn)  
+- Visualization: Multi-dimensional dashboards showing disease progression and patient risk groups  
+
+**Impact**  
+Improves **evidence-based clinical decision-making** and supports **predictive healthcare research**.  
+
+📸 Example Visualization  
+![Healthcare Dashboard](projects/clinical-analytics/images/emr_dashboard.png)  
+
+---
+
+### 💳 Biometric ATM Authentication System  
+**Abstract**: Designed a **two-factor biometric authentication prototype** integrating facial recognition with tamper detection for secure, offline ATM access.  
+
+**Technical Details**  
+- Methods: Facial recognition with CNNs · Image noise filtering · Spoof detection algorithms  
+- Tools: TensorFlow, OpenCV  
+- Deployment: Prototype tested in simulated offline environments  
+
+**Impact**  
+Enhances **financial inclusion** by providing secure ATM services in regions with limited network connectivity.  
+
+📸 Example Visualization  
+![Biometric ATM Prototype](projects/biometric-atm/images/atm_biometric.png)  
+
+---
+
+## 🛠️ Technical Skills  
+
+**Languages:** Python · R · Java · SQL · C++ · JavaScript  
+**Frameworks:** Spring Boot · React · Next.js · Express.js  
+**Databases:** PostgreSQL · SQL Server · Snowflake · MySQL · MongoDB  
+**ML/AI:** TensorFlow · scikit-learn · YOLOv5 · CNNs · Bayesian Inference  
+**Tools:** Power BI · Tableau · SPSS · RStudio · Apache Beam · Airflow  
+**Cloud/DevOps:** AWS · GCP · Azure · Docker · Kubernetes · GitHub Actions · Terraform  
+
+---
+
+## 📚 Certifications  
+
+- Microsoft Certified: Power BI Data Analyst  
+- Google Cloud Training: Data Engineering with GCP  
+- DataCamp: Deep Learning Fundamentals, Data Analyst, Data Engineer  
+- AWS Solutions Architect (In Progress)  
+
+---
+
+## 📫 Connect  
 
 📧 [lalithprakash46@gmail.com](mailto:lalithprakash46@gmail.com)  
 🔗 [LinkedIn](https://linkedin.com/in/parsalalith)  
-💻 [GitHub](https://github.com/LkP23)
+💻 [GitHub](https://github.com/LkP23)  
 
 ---
 
-⭐ **Let’s explore intelligent systems, reliable software, and applied analytics together.**  
-📍 Based in Dallas, TX | Open to remote research & PhD collaboration
+⭐ *Exploring intelligent systems, statistical learning, and applied deep learning for impactful research and real-world applications.*  
