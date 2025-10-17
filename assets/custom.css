@@ -1,159 +1,50 @@
 /* =========================================================
-   Lalith Krishna Prakash Parsa – Portfolio Styling (2025)
-   Professional academic layout • color-blind safe • dark-mode
+   Sticky Top Navigation Bar – Dark/Light Adaptive
    ========================================================= */
 
-/* ---------- COLOR PALETTE ---------- */
-:root {
-  --blue: #1565c0;           /* trust, clarity */
-  --green: #2e7d32;          /* logic, stability */
-  --purple: #6a1b9a;         /* intellect, creativity */
-  --yellow: #f9a825;         /* focus accent */
-  --gray-light: #f5f7fa;
-  --gray-dark: #121212;
-  --card-light: #ffffff;
-  --card-dark: #1e1e1e;
-  --text-light: #fafafa;
-  --text-dark: #1a1a1a;
-  --border-light: rgba(0,0,0,0.08);
-  --border-dark: rgba(255,255,255,0.12);
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid var(--blue);
+  padding: 12px 0;
+  font-weight: 600;
+  transition: background 0.4s ease, color 0.4s ease, border 0.4s ease;
 }
 
-/* ---------- GLOBAL TYPOGRAPHY ---------- */
-body {
-  font-family: "Inter","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  line-height: 1.75;
-  font-size: 1.02rem;
-  background: var(--gray-light);
-  color: var(--text-dark);
-  margin: 0;
-  padding: 0 10%;
-  transition: background 0.4s ease, color 0.4s ease;
-}
+/* Dark mode styling */
 @media (prefers-color-scheme: dark) {
-  body {
-    background: var(--gray-dark);
-    color: var(--text-light);
+  .navbar {
+    background: rgba(18, 18, 18, 0.85);
+    border-bottom: 2px solid var(--green);
   }
 }
 
-/* ---------- HEADINGS ---------- */
-h1 {
-  font-size: 2rem;
+/* Navbar link styles */
+.navbar a {
   color: var(--blue);
-  border-bottom: 3px solid var(--blue);
-  padding-bottom: 0.2em;
-  margin-bottom: 0.8em;
-}
-h2 {
-  color: var(--purple);
-  font-size: 1.4rem;
-  margin-top: 2.2em;
-  border-left: 6px solid var(--purple);
-  padding-left: 10px;
-}
-h3 {
-  color: var(--blue);
-  font-size: 1.15rem;
-  margin-top: 1.8em;
-}
-@media (prefers-color-scheme: dark) {
-  h1,h2,h3 { color: var(--blue); }
-}
-
-/* ---------- LINKS ---------- */
-a {
-  color: var(--purple);
   text-decoration: none;
-  font-weight: 500;
+  font-size: 1.05rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.25s ease;
 }
-a:hover { color: var(--yellow); text-decoration: underline; }
 
-/* ---------- PROJECT CARD CONTAINER ---------- */
-.project-card {
-  background: var(--card-light);
-  border-left: 5px solid var(--blue);
-  border-radius: 10px;
-  padding: 20px 25px;
-  margin: 35px 0;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.navbar a:hover {
+  color: var(--yellow);
+  background: rgba(21,101,192,0.1);
 }
-.project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
-}
+
+/* Dark mode links */
 @media (prefers-color-scheme: dark) {
-  .project-card {
-    background: var(--card-dark);
-    border-left: 5px solid var(--green);
-    box-shadow: 0 4px 14px rgba(0,0,0,0.6);
+  .navbar a { color: var(--text-light); }
+  .navbar a:hover {
+    color: var(--yellow);
+    background: rgba(255,255,255,0.08);
   }
-}
-
-/* ---------- PROJECT IMAGE ---------- */
-.project-image {
-  display: block;
-  width: 100%;
-  max-width: 740px;
-  margin: 15px auto 20px auto;
-  border-radius: 12px;
-  object-fit: cover;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
-}
-.project-image:hover {
-  transform: scale(1.03);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.35);
-}
-
-/* ---------- TEXT BLOCKS ---------- */
-p {
-  text-align: justify;
-  margin: 0.6em 0;
-}
-b,strong {
-  color: var(--green);
-}
-
-/* ---------- SECTION COLORS ---------- */
-h2:has(+ .project-card),
-h2:has(+ img) {
-  color: var(--purple);
-}
-h2:first-of-type {
-  color: var(--blue);
-  border-left-color: var(--blue);
-}
-
-/* ---------- LIST STYLE ---------- */
-ul, ol {
-  margin: 0.5em 0 0.8em 1.3em;
-  padding: 0;
-}
-li {
-  margin-bottom: 0.3em;
-}
-
-/* ---------- DIVIDERS ---------- */
-hr {
-  border: none;
-  border-top: 2px solid var(--border-light);
-  margin: 2em 0;
-}
-@media (prefers-color-scheme: dark) {
-  hr { border-top: 2px solid var(--border-dark); }
-}
-
-/* ---------- RESPONSIVE ---------- */
-@media (max-width: 760px) {
-  body { padding: 0 5%; font-size: 0.98rem; }
-  .project-card { padding: 18px; }
-  .project-image { max-width: 100%; }
-}
-
-/* ---------- ACCESSIBILITY ---------- */
-:focus-visible {
-  outline: 3px solid var(--yellow);
-  outline-offset: 3px;
 }
