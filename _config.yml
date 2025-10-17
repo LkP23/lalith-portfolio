@@ -8,7 +8,7 @@ description: "Ph.D. Applicant in Computer Science | AI • Data Analytics • Ma
 locale: "en-US"
 
 # --- THEME SETTINGS ---
-theme: "minimal-mistakes-jekyll"
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "sunrise"    # colorful skin, works with light/dark
 logo: "/assets/profile.jpg"
 repository: "LkP23/lalith-portfolio"
@@ -70,6 +70,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-include-cache
+  - jekyll-remote-theme
 
 # --- PAGINATION SETTINGS ---
 paginate: 5
