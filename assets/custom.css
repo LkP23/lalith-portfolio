@@ -1,212 +1,159 @@
 /* =========================================================
-   Lalith Krishna Prakash Parsa – Portfolio Stylesheet
-   Academic • Color-Blind-Safe • Light/Dark • Research Cards
+   Lalith Krishna Prakash Parsa – Portfolio Styling (2025)
+   Professional academic layout • color-blind safe • dark-mode
    ========================================================= */
 
-/* ---------- BASE COLORS (Light Mode) ---------- */
+/* ---------- COLOR PALETTE ---------- */
 :root {
-  --blue-main: #1565c0;
-  --green-accent: #2e7d32;
-  --yellow-focus: #f9a825;
-  --purple-accent: #6a1b9a;
-  --gray-bg: #f5f5f5;
-  --card-bg: #ffffff;
-  --text-main: #1b1b1b;
-  --shadow: rgba(0, 0, 0, 0.15);
-  --border: rgba(0, 0, 0, 0.08);
+  --blue: #1565c0;           /* trust, clarity */
+  --green: #2e7d32;          /* logic, stability */
+  --purple: #6a1b9a;         /* intellect, creativity */
+  --yellow: #f9a825;         /* focus accent */
+  --gray-light: #f5f7fa;
+  --gray-dark: #121212;
+  --card-light: #ffffff;
+  --card-dark: #1e1e1e;
+  --text-light: #fafafa;
+  --text-dark: #1a1a1a;
+  --border-light: rgba(0,0,0,0.08);
+  --border-dark: rgba(255,255,255,0.12);
 }
 
-/* ---------- BASE COLORS (Dark Mode) ---------- */
+/* ---------- GLOBAL TYPOGRAPHY ---------- */
+body {
+  font-family: "Inter","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  line-height: 1.75;
+  font-size: 1.02rem;
+  background: var(--gray-light);
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0 10%;
+  transition: background 0.4s ease, color 0.4s ease;
+}
 @media (prefers-color-scheme: dark) {
-  :root {
-    --blue-main: #90caf9;
-    --green-accent: #81c784;
-    --yellow-focus: #ffeb3b;
-    --purple-accent: #ce93d8;
-    --gray-bg: #121212;
-    --card-bg: #1e1e1e;
-    --text-main: #e0e0e0;
-    --shadow: rgba(0,0,0,0.6);
-    --border: rgba(255,255,255,0.1);
+  body {
+    background: var(--gray-dark);
+    color: var(--text-light);
   }
 }
 
-/* ---------- GLOBAL LAYOUT ---------- */
-html, body {
-  margin: 0;
-  padding: 0;
-  font-family: "Inter", "Segoe UI", Roboto, sans-serif;
-  background: var(--gray-bg);
-  color: var(--text-main);
-  line-height: 1.6;
-}
-
 /* ---------- HEADINGS ---------- */
-h1, h2, h3, h4, h5 {
-  color: var(--blue-main);
-  font-weight: 700;
+h1 {
+  font-size: 2rem;
+  color: var(--blue);
+  border-bottom: 3px solid var(--blue);
+  padding-bottom: 0.2em;
+  margin-bottom: 0.8em;
+}
+h2 {
+  color: var(--purple);
+  font-size: 1.4rem;
+  margin-top: 2.2em;
+  border-left: 6px solid var(--purple);
+  padding-left: 10px;
+}
+h3 {
+  color: var(--blue);
+  font-size: 1.15rem;
+  margin-top: 1.8em;
+}
+@media (prefers-color-scheme: dark) {
+  h1,h2,h3 { color: var(--blue); }
 }
 
 /* ---------- LINKS ---------- */
 a {
-  color: var(--purple-accent);
+  color: var(--purple);
   text-decoration: none;
-  transition: color 0.3s ease;
+  font-weight: 500;
 }
-a:hover { color: var(--yellow-focus); text-decoration: underline; }
+a:hover { color: var(--yellow); text-decoration: underline; }
 
-/* ---------- BUTTONS ---------- */
-.btn {
-  display: inline-block;
-  margin: 6px;
-  padding: 10px 18px;
-  border-radius: 6px;
-  font-weight: 600;
-  color: #fff;
-  background: var(--blue-main);
-  transition: background 0.3s ease;
-}
-.btn:hover { background: var(--green-accent); }
-
-/* =========================================================
-   RESEARCH PAGE: PROJECT CARDS
-   ========================================================= */
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 24px;
-  margin-top: 30px;
-}
-
-/* ---------- CARD ---------- */
+/* ---------- PROJECT CARD CONTAINER ---------- */
 .project-card {
-  position: relative;
-  overflow: hidden;
-  background: var(--card-bg);
-  border-radius: 18px;
-  box-shadow: 0 4px 8px var(--shadow);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  border: 1px solid var(--border);
+  background: var(--card-light);
+  border-left: 5px solid var(--blue);
+  border-radius: 10px;
+  padding: 20px 25px;
+  margin: 35px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 16px var(--shadow);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+@media (prefers-color-scheme: dark) {
+  .project-card {
+    background: var(--card-dark);
+    border-left: 5px solid var(--green);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.6);
+  }
 }
 
-/* ---------- IMAGE ---------- */
-.project-card img {
+/* ---------- PROJECT IMAGE ---------- */
+.project-image {
+  display: block;
   width: 100%;
-  height: 220px;
-  object-fit: cover;
-  filter: contrast(1.05) brightness(1.05);
-  transition: transform 0.5s ease, filter 0.5s ease;
-}
-.project-card:hover img {
-  transform: scale(1.08);
-  filter: brightness(1.15);
-}
-
-/* ---------- OVERLAY TEXT (Optional gradient) ---------- */
-.project-card::after {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.35));
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-.project-card:hover::after {
-  opacity: 1;
-}
-
-/* ---------- CARD CONTENT ---------- */
-.project-card-content {
-  padding: 16px 18px 20px 18px;
-  position: relative;
-  z-index: 2;
-  background: var(--card-bg);
-}
-.project-card-content h3 {
-  margin-top: 0;
-  margin-bottom: 8px;
-  color: var(--blue-main);
-  font-size: 1.15em;
-}
-.project-card-content p {
-  font-size: 0.95em;
-  color: var(--text-main);
-  margin: 0.3em 0;
-}
-.project-card-content b {
-  color: var(--purple-accent);
-}
-
-/* ---------- CARD TAGS ---------- */
-.project-tags {
-  margin-top: 10px;
-}
-.project-tags span {
-  display: inline-block;
-  background: var(--blue-main);
-  color: #fff;
+  max-width: 740px;
+  margin: 15px auto 20px auto;
   border-radius: 12px;
-  font-size: 0.75em;
-  font-weight: 600;
-  padding: 4px 10px;
-  margin-right: 6px;
-  margin-bottom: 6px;
+  object-fit: cover;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
-.project-card:hover .project-tags span {
-  background: var(--green-accent);
-}
-
-/* =========================================================
-   TABLES / CONTACT PAGE
-   ========================================================= */
-table {
-  border-collapse: collapse;
-  width: 100%;
-  margin: 1em 0;
-}
-th, td {
-  border-bottom: 1px solid var(--border);
-  padding: 10px 12px;
-}
-tr:hover td {
-  background: rgba(21,101,192,0.05);
+.project-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.35);
 }
 
-/* =========================================================
-   TITLES / DIVIDERS / ACCESSIBILITY
-   ========================================================= */
-.page__title {
-  background: linear-gradient(90deg, var(--blue-main), var(--purple-accent));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 800;
+/* ---------- TEXT BLOCKS ---------- */
+p {
+  text-align: justify;
+  margin: 0.6em 0;
+}
+b,strong {
+  color: var(--green);
 }
 
+/* ---------- SECTION COLORS ---------- */
+h2:has(+ .project-card),
+h2:has(+ img) {
+  color: var(--purple);
+}
+h2:first-of-type {
+  color: var(--blue);
+  border-left-color: var(--blue);
+}
+
+/* ---------- LIST STYLE ---------- */
+ul, ol {
+  margin: 0.5em 0 0.8em 1.3em;
+  padding: 0;
+}
+li {
+  margin-bottom: 0.3em;
+}
+
+/* ---------- DIVIDERS ---------- */
 hr {
   border: none;
-  border-top: 2px solid var(--border);
+  border-top: 2px solid var(--border-light);
   margin: 2em 0;
 }
-
-:focus-visible {
-  outline: 3px solid var(--yellow-focus);
-  outline-offset: 2px;
+@media (prefers-color-scheme: dark) {
+  hr { border-top: 2px solid var(--border-dark); }
 }
 
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
-@media (max-width: 600px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-  .project-card img {
-    height: 200px;
-  }
-  .btn { width: 100%; text-align: center; }
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 760px) {
+  body { padding: 0 5%; font-size: 0.98rem; }
+  .project-card { padding: 18px; }
+  .project-image { max-width: 100%; }
+}
+
+/* ---------- ACCESSIBILITY ---------- */
+:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 3px;
 }
