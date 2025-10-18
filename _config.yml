@@ -2,35 +2,18 @@
 # Lalith Krishna Prakash Parsa | Academic Portfolio (2025)
 # ==========================================================
 
-title: ""                # remove site title to hide "lalith-portfolio"
+title: ""
 description: "Ph.D. Applicant in Computer Science | AI • Data Analytics • Machine Learning"
 locale: "en-US"
 
 # --- THEME SETTINGS ---
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "sunrise"   # warm theme
-logo: ""                           # remove header logo completely
+minimal_mistakes_skin: "sunrise"
+logo: ""
 
 # --- SITE URL ---
 url: "https://LkP23.github.io"
 baseurl: "/"
-
-# --- AUTHOR INFORMATION ---
-author:
-  name: "Lalith Krishna Prakash Parsa"
-  avatar: "/assets/profile.jpg"
-  bio: "Ph.D. Applicant in Computer Science focusing on AI, Data Analytics, and Computer Vision."
-  location: "Dallas, TX, USA"
-  links:
-    - label: "Email"
-      icon: "fas fa-envelope"
-      url: "mailto:lalithprakash46@gmail.com"
-    - label: "GitHub"
-      icon: "fab fa-github"
-      url: "https://github.com/LkP23"
-    - label: "LinkedIn"
-      icon: "fab fa-linkedin"
-      url: "https://linkedin.com/in/lalithprakash"
 
 # --- MARKDOWN SETTINGS ---
 markdown: kramdown
@@ -53,7 +36,7 @@ defaults:
       type: "pages"
     values:
       layout: single
-      author_profile: true
+      author_profile: false    # disables sidebar profile
       sidebar:
         nav: "main"
       read_time: false
