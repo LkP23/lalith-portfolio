@@ -1,12 +1,9 @@
 /* ==========================================================
-   Lalith Krishna Prakash Parsa | Portfolio Custom Styling
-   Soft-dark soothing teal theme | Modern academic layout
+   Lalith Krishna Prakash Parsa | Custom Styling
+   Soft-dark teal theme | circular profile photo
    ========================================================== */
 
-/* ---------- GLOBAL ---------- */
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   font-family: "Inter", "Segoe UI", Roboto, sans-serif;
@@ -16,7 +13,7 @@ body {
   transition: background 0.4s ease, color 0.4s ease;
 }
 
-/* Accent palette (teal theme) */
+/* --- accent palette --- */
 :root {
   --accent: #00b4b6;
   --accent-light: #5ce1e6;
@@ -24,7 +21,7 @@ body {
   --border: #27313d;
 }
 
-/* ---------- HEADER & NAVIGATION ---------- */
+/* --- header nav --- */
 .masthead {
   background: linear-gradient(90deg, #006d77 0%, #0a3d3f 100%);
   border-bottom: 2px solid var(--accent);
@@ -40,64 +37,54 @@ body {
   text-decoration: underline;
 }
 
-/* Remove duplicate site title/logo and top text */
-.site-title,
-.site-logo,
-.page__title,
-.page__meta,
-.page__taxonomy,
-.page__date,
-.masthead__inner-wrap > a {
-  display: none !important;
+/* --- hide duplicate titles --- */
+.site-title, .site-logo, .sidebar { display: none !important; }
+
+/* --- profile layout --- */
+.intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.profile-wrapper { flex-shrink: 0; }
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.profile-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 180, 182, 0.5);
+}
+.intro-text {
+  max-width: 600px;
+  text-align: left;
+}
+.intro-text h1 { color: var(--accent-light); margin-bottom: 0.5rem; }
+.intro-text p { margin: 0.4rem 0; }
+
+/* --- project images --- */
+.project-image {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  margin: 15px auto;
+  display: block;
+  box-shadow: 0 4px 15px rgba(0, 180, 182, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 255, 255, 0.3);
 }
 
-/* ---------- HOMEPAGE SPLASH ---------- */
-.page__hero--overlay {
-  background-blend-mode: multiply;
-  background-size: cover;
-  background-position: center;
-  color: #ffffff;
-  padding: 4rem 2rem;
-  text-align: center;
-}
-.page__hero--overlay .btn {
-  background-color: var(--accent);
-  border: none;
-  color: #fff;
-  font-weight: 600;
-  border-radius: 6px;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-.page__hero--overlay .btn:hover {
-  background-color: var(--accent-light);
-  color: #000;
-  transform: translateY(-2px);
-}
-
-/* ---------- SIDEBAR REMOVAL ---------- */
-.sidebar {
-  display: none !important;
-}
-
-/* ---------- LINKS & HEADINGS ---------- */
-a {
-  color: var(--accent);
-  text-decoration: none;
-}
-a:hover {
-  color: var(--accent-light);
-  text-decoration: underline;
-}
-
-h1, h2, h3, h4, h5 {
-  color: var(--accent-light);
-  font-weight: 600;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 4px;
-  margin-top: 1.2em;
-}
-
-/* ---------- PROJECT CARDS ---------- */
+/* --- cards --- */
 .project-card {
   background: var(--card-bg);
   border: 1px solid var(--border);
@@ -110,62 +97,18 @@ h1, h2, h3, h4, h5 {
   transform: translateY(-4px);
   box-shadow: 0 4px 15px rgba(0, 200, 210, 0.25);
 }
-.project-card img {
-  border-radius: 8px;
-  margin-bottom: 10px;
-  width: 100%;
-  height: auto;
-}
 
-/* ---------- RESEARCH PAGE IMAGES ---------- */
-.project-image {
-  width: 100%;
-  max-width: 850px;
-  border-radius: 12px;
-  margin: 15px auto;
-  display: block;
-  box-shadow: 0 4px 15px rgba(0, 180, 186, 0.25);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.project-image:hover {
-  transform: scale(1.02);
-  box-shadow: 0 6px 20px rgba(0, 255, 255, 0.3);
-}
-
-/* ---------- FOOTER ---------- */
+/* --- footer --- */
 .page__footer {
   background: #0b1217;
   color: #b0c7c9;
   border-top: 1px solid var(--border);
 }
-.page__footer a {
-  color: var(--accent);
-}
-.page__footer a:hover {
-  color: var(--accent-light);
-}
+.page__footer a { color: var(--accent); }
+.page__footer a:hover { color: var(--accent-light); }
 
-/* ---------- SCROLLBAR ---------- */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  background: #0d1318;
-}
-::-webkit-scrollbar-thumb {
-  background: var(--accent);
-  border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-light);
-}
-
-/* ---------- RESPONSIVE ---------- */
+/* --- responsive --- */
 @media (max-width: 768px) {
-  .masthead {
-    font-size: 0.9em;
-  }
-  .project-card {
-    padding: 12px;
-  }
+  .intro-container { flex-direction: column; text-align: center; }
+  .intro-text { text-align: center; }
 }
