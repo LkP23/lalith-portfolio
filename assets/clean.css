@@ -1,127 +1,18 @@
-/* ==========================================================
-   Lalith Krishna Prakash Parsa | Portfolio Custom Styling
-   Compatible with Minimal Mistakes (sunrise)
-   Lightweight + Non-conflicting
-   ========================================================== */
-
-/* ---------- GLOBAL PAGE ---------- */
-body {
-  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.7;
-  background-color: #f9f4ee;
-  color: #222;
-  margin: 0;
-  padding: 0;
+.hero {
+  background: linear-gradient(to right, #002b36, #004466);
+  color: #fff;
+  height: 100vh;
+  text-align: center;
 }
-
-/* ---------- LINKS ---------- */
+.hero img {
+  border: 4px solid #fff;
+}
+h1, h2, h3, h4 {
+  color: #004466;
+}
 a {
-  color: #b55400;
-  text-decoration: none;
-  transition: color 0.2s ease;
+  color: #0056b3;
 }
 a:hover {
-  color: #ff8800;
   text-decoration: underline;
 }
-
-/* ---------- HEADINGS ---------- */
-h1, h2, h3, h4 {
-  color: #222;
-  font-weight: 600;
-  margin-top: 1.5em;
-}
-
-/* ---------- AVATAR (SIDEBAR IMAGE) ---------- */
-.author__avatar img {
-  max-width: 180px !important;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto 15px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.25);
-  object-fit: cover;
-}
-
-/* ---------- AUTHOR INFO PANEL ---------- */
-.author__content {
-  text-align: center;
-}
-.author__name {
-  font-size: 1.25em;
-  font-weight: 700;
-}
-.author__bio {
-  font-size: 0.95em;
-  color: #555;
-  margin-top: 5px;
-}
-
-/* ---------- SIDEBAR CLEANUP ---------- */
-.sidebar {
-  background-color: #f3e7d7;
-  border-right: 1px solid #e2d3c0;
-}
-.page__sidebar {
-  padding-top: 1.5em;
-}
-.page__sidebar .social-icons a {
-  color: #333 !important;
-  font-size: 1.2em;
-  margin: 0 5px;
-}
-
-/* ---------- NAVIGATION MENU ---------- */
-.masthead {
-  background-color: #f6e7d3;
-  border-bottom: 1px solid #e2d3c0;
-}
-.site-nav a {
-  font-weight: 600;
-  color: #3a2a1a !important;
-}
-.site-nav a:hover {
-  color: #ff8a00 !important;
-}
-
-/* ---------- CONTENT AREA ---------- */
-.page__content {
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 2em 3em;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-  margin-bottom: 2em;
-}
-
-/* ---------- TABLE OF CONTENTS ---------- */
-.toc {
-  background-color: #fff8f0;
-  border: 1px solid #e4c9a8;
-  border-radius: 6px;
-  padding: 1em;
-}
-.toc__menu a {
-  color: #633f1f;
-}
-
-/* ---------- FOOTER ---------- */
-.page__footer {
-  background-color: #f6e7d3;
-  color: #3a2a1a;
-  font-size: 0.9em;
-  text-align: center;
-  padding: 1em 0;
-}
-.page__footer a {
-  color: #b55400;
-}
-
-/* ---------- RESPONSIVE TWEAKS ---------- */
-@media (max-width: 768px) {
-  .page__content {
-    padding: 1.2em;
-  }
-  .author__avatar img {
-    max-width: 130px !important;
-  }
-}
-clean.css
