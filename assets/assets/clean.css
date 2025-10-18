@@ -1,0 +1,19 @@
+/* Hide unwanted author elements */
+.author__content,
+.author__urls-wrapper,
+.author__urls,
+.author__bio,
+.author__location {
+  display: none !important;
+}
+
+/* Center and enlarge avatar */
+.author__avatar img {
+  width: 220px !important;
+  height: 220px !important;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
