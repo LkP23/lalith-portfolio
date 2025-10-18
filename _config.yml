@@ -1,37 +1,27 @@
-# ==========================================================
-# Lalith Krishna Prakash Parsa | Academic Portfolio
-# Theme: jekyll-theme-primer (GitHub default)
-# ==========================================================
-
 title: "Lalith Krishna Prakash Parsa"
-description: "Ph.D. Applicant in Computer Science | AI • Data Analytics • Machine Learning"
-theme: jekyll-theme-primer
+description: "Ph.D. Applicant in Computer Science | AI • Data Analytics • Computer Vision"
+theme: jekyll-theme-cayman
 locale: en-US
 
-# ---- Site URLs ----
 url: "https://LkP23.github.io"
 baseurl: "/lalith-portfolio"
 
-# ---- Author ----
 author:
   name: "Lalith Krishna Prakash Parsa"
   email: "lalithprakash46@gmail.com"
   github: "https://github.com/LkP23"
   linkedin: "https://linkedin.com/in/lalithprakash"
-  location: "Plano, Texas, USA"
+  location: "Dallas, TX, USA"
 
-# ---- Markdown ----
 markdown: kramdown
 kramdown:
   input: GFM
 permalink: pretty
 
-# ---- Directories ----
 include:
   - "_pages"
   - "assets"
 
-# ---- Defaults ----
 defaults:
   - scope:
       path: ""
@@ -39,17 +29,14 @@ defaults:
       layout: default
       css: "/assets/custom.css"
 
-# ---- Plugins ----
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
 
-# ---- Visuals ----
 favicon: "/assets/favicon.ico"
 logo: "/assets/profile.jpg"
 
-# ---- Exclusions ----
 exclude:
   - README.md
   - Gemfile
