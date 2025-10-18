@@ -1,6 +1,6 @@
 # ==========================================================
 # Lalith Krishna Prakash Parsa | Academic Portfolio (2025)
-# GitHub Pages Jekyll Configuration (Dark Mode)
+# GitHub Pages Configuration (Soft-Dark Teal Theme)
 # ==========================================================
 
 title: "Lalith Krishna Prakash Parsa"
@@ -9,7 +9,7 @@ locale: "en-US"
 
 # --- THEME SETTINGS ---
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "dark"    # Dark modern palette
+minimal_mistakes_skin: "contrast"     # balanced contrast, easy on eyes
 logo: "/assets/profile.jpg"
 repository: "LkP23/lalith-portfolio"
 
@@ -55,9 +55,8 @@ defaults:
       type: "pages"
     values:
       layout: single
-      author_profile: true
-      sidebar:
-        nav: "main"
+      author_profile: false   # removes sidebar profile
+      sidebar: false          # removes left navigation
       css: /assets/custom.css
       read_time: false
       share: false
