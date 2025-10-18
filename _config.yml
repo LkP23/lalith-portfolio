@@ -1,22 +1,21 @@
 # ==========================================================
 # Lalith Krishna Prakash Parsa | Academic Portfolio (2025)
-# GitHub Pages Jekyll Configuration (Clean Static Version)
 # ==========================================================
 
 title: "Lalith Krishna Prakash Parsa"
 description: "Ph.D. Applicant in Computer Science | AI • Data Analytics • Machine Learning"
 locale: "en-US"
 
-# --- THEME SETTINGS ---
-theme: null
-logo:
-repository:
+# --- THEME ---
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "air"   # other options: default, sunrise, contrast, mint
+logo: "/assets/profile.jpg"
 
-# --- SITE URL CONFIGURATION ---
+# --- URL ---
 url: "https://LkP23.github.io"
-baseurl: ""
+baseurl: "/"
 
-# --- AUTHOR INFORMATION ---
+# --- AUTHOR ---
 author:
   name: "Lalith Krishna Prakash Parsa"
   avatar: "/assets/profile.jpg"
@@ -33,13 +32,12 @@ author:
       icon: "fab fa-linkedin"
       url: "https://linkedin.com/in/lalithprakash"
 
-# --- MARKDOWN AND BUILD SETTINGS ---
+# --- MARKDOWN ---
 markdown: kramdown
 highlighter: rouge
 permalink: /:categories/:title/
-future: true
 
-# --- FOLDERS TO INCLUDE ---
+# --- INCLUDE ---
 include:
   - "_pages"
 
@@ -47,12 +45,20 @@ collections:
   pages:
     output: true
 
-# --- DEFAULTS FOR ALL PAGES ---
+# --- DEFAULTS ---
 defaults:
   - scope:
       path: ""
+      type: "pages"
     values:
-      layout: default
+      layout: single
+      author_profile: true
+      sidebar:
+        nav: "main"
+      read_time: false
+      share: false
+      show_date: false
+      css: /assets/custom.css?v=999
 
 # --- PLUGINS ---
 plugins:
@@ -61,19 +67,10 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-include-cache
+  - jekyll-remote-theme
 
-# --- PAGINATION SETTINGS ---
 paginate: 5
 paginate_path: "/page:num/"
 
-# --- SEO AND SOCIAL LINKS ---
-social:
-  name: "Lalith Krishna Prakash Parsa"
-  links:
-    - "https://github.com/LkP23"
-    - "https://linkedin.com/in/lalithprakash"
-
-# --- OPTIONS ---
-search: true
-comments: false
-enable_darkmode: true
+# --- NAVIGATION ---
+data_dir: _data
