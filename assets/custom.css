@@ -137,6 +137,17 @@ footer a { color: #fff; text-decoration: underline; }
   display: none !important;
 }
 
+/* ---------- FORCE-HIDE TOP NAV TITLE ---------- */
+.masthead .site-title,
+.masthead__inner-wrap .site-title,
+.masthead__menu .site-title {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+
+
 /* ---------- ENLARGE AUTHOR AVATAR ---------- */
 .author__avatar img {
   width: 160px !important;     /* default ~100px */
