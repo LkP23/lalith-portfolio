@@ -1,6 +1,5 @@
 # ==========================================================
 # Lalith Krishna Prakash Parsa | Academic Portfolio (2025)
-# GitHub Pages Configuration - Minimal Mistakes (Remote Theme)
 # ==========================================================
 
 title: "Lalith Krishna Prakash Parsa"
@@ -35,67 +34,27 @@ author:
       icon: "fab fa-linkedin"
       url: "https://linkedin.com/in/lalithprakash"
 
-# --- MARKDOWN & BUILD SETTINGS ---
-markdown: kramdown
-highlighter: rouge
-permalink: /:title/
-future: true
-
-# --- FOLDERS TO INCLUDE ---
-include:
-  - "_pages"
-  - "_data"
-
-# --- DEFAULTS FOR ALL PAGES ---
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: single
-      author_profile: true
-      sidebar:
-        nav: "main"
-      css: /assets/custom.css
-      read_time: false
-      share: false
-      show_date: false
-
 # --- PLUGINS ---
 plugins:
+  - jekyll-include-cache
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-include-cache
 
-# --- PAGINATION SETTINGS ---
-paginate: 5
-paginate_path: "/page:num/"
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
 
-# --- SEO / SOCIAL LINKS ---
-social:
-  name: "Lalith Krishna Prakash Parsa"
-  links:
-    - "https://github.com/LkP23"
-    - "https://linkedin.com/in/lalithprakash"
+include:
+  - "_pages"
+  - "_data"
 
-# --- OPTIONS ---
-search: true
-comments: false
-enable_darkmode: false
-
-# --- THEME TWEAKS ---
-# Light & soothing teal mode (not full dark)
-# Matches your custom.css palette
-minimal_mistakes_skin: "teal"
-
-# --- NAVIGATION CONFIG ---
 collections:
   pages:
     output: true
 
-# --- MENU LINKS ---
+# --- NAVIGATION ---
 navigation:
   - title: "Home"
     url: "/"
@@ -109,3 +68,18 @@ navigation:
     url: "/cv/"
   - title: "Contact"
     url: "/contact/"
+
+# --- THEME OVERRIDES ---
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: splash
+      author_profile: false
+      classes: wide
+      header:
+        overlay_color: "#000"
+        overlay_filter: "0.45"
+        overlay_image: "/assets/banner.png"
+      css: "/assets/custom.css"
