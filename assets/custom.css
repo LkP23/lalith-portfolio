@@ -1,75 +1,45 @@
-/* ==========================================================
-   Custom CSS – Soft Dark Teal Portfolio
-   ========================================================== */
-
 body {
   font-family: "Inter", "Segoe UI", Roboto, sans-serif;
-  line-height: 1.6;
-  background-color: #0f141a !important;
-  color: #d9e6eb !important;
+  color: #333;
+  background-color: #f9fbfc;
 }
 
-/* Accent palette (teal) */
-:root {
-  --accent: #00b4b6;
-  --accent-light: #5ce1e6;
-  --border: #26323b;
+h1 {
+  color: #2C8F99;
 }
 
-/* Masthead and banner */
-.masthead, .page__hero--overlay {
-  background-color: #0f141a !important;
-  border-bottom: 1px solid var(--accent);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-}
-.page__hero--overlay::before {
-  background: rgba(0, 0, 0, 0.45);
-}
-
-/* Headings */
-h1, h2, h3 {
-  color: var(--accent-light);
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 4px;
-}
-
-/* Links */
 a {
-  color: var(--accent);
-  text-decoration: none;
+  color: #2C8F99;
 }
 a:hover {
-  color: var(--accent-light);
-  text-decoration: underline;
+  color: #4AADA8;
 }
 
-/* Circular Profile Image */
+header.site-header {
+  background-color: #e6f4f4;
+}
+
+/* Hide default site title in Cayman header */
+header .site-header .site-title, header .site-header .site-description {
+  display: none;
+}
+
+/* Quick Links table styling */
+table {
+  width: 100%;
+  margin: 2rem 0;
+  border-collapse: collapse;
+}
+table td {
+  padding: 0.8rem;
+  border-bottom: 1px solid #ddd;
+}
+table td a {
+  font-weight: 600;
+}
+
+/* Profile image styling if override needed */
 .profile-circle {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid var(--accent);
-  box-shadow: 0 0 15px rgba(0, 180, 186, 0.5);
-  display: inline-block;
-}
-
-/* Footer */
-.page__footer {
-  background-color: #0b1217;
-  color: #b0c7c9;
-  border-top: 1px solid var(--border);
-  text-align: center;
-}
-
-/* Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-thumb {
-  background: var(--accent);
-  border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-light);
+  border: 3px solid #2C8F99;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
