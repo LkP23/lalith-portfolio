@@ -1,8 +1,6 @@
-_config.yaml 
-
 # ==========================================================
 # Lalith Krishna Prakash Parsa | Academic Portfolio (2025)
-# GitHub Pages Configuration for Minimal Mistakes Jekyll
+# GitHub Pages Jekyll Configuration (Remote Theme)
 # ==========================================================
 
 title: "Lalith Krishna Prakash Parsa"
@@ -11,15 +9,15 @@ locale: "en-US"
 
 # --- THEME SETTINGS ---
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "sunrise"    # colorful skin, works with light/dark
+minimal_mistakes_skin: "sunrise"    # colorful theme with light/dark support
 logo: "/assets/profile.jpg"
 repository: "LkP23/lalith-portfolio"
 
-# --- SITE URL CONFIG ---
+# --- SITE URL CONFIGURATION ---
 url: "https://LkP23.github.io"
 baseurl: "/lalith-portfolio"
 
-# --- AUTHOR PROFILE ---
+# --- AUTHOR INFORMATION ---
 author:
   name: "Lalith Krishna Prakash Parsa"
   avatar: "/assets/profile.jpg"
@@ -36,7 +34,7 @@ author:
       icon: "fab fa-linkedin"
       url: "https://linkedin.com/in/lalithprakash"
 
-# --- MARKDOWN & BUILD SETTINGS ---
+# --- MARKDOWN AND BUILD SETTINGS ---
 markdown: kramdown
 highlighter: rouge
 permalink: /:categories/:title/
@@ -78,7 +76,7 @@ plugins:
 paginate: 5
 paginate_path: "/page:num/"
 
-# --- SEO / SOCIAL LINKS ---
+# --- SEO AND SOCIAL LINKS ---
 social:
   name: "Lalith Krishna Prakash Parsa"
   links:
