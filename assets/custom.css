@@ -1,6 +1,6 @@
 /* =========================================================
    Lalith Krishna Prakash Parsa – Academic Portfolio Theme
-   Auto light/dark • Hero banner • Profile styling
+   Enhanced: hidden title • dynamic markdown • interactive cards
    ========================================================= */
 
 /* ---------- COLOR SCHEME ---------- */
@@ -66,7 +66,7 @@ h2 { color: var(--purple); border-left: 6px solid var(--purple); padding-left: 1
 h3 { color: var(--green); }
 
 /* ---------- LINKS ---------- */
-a { color: var(--purple); text-decoration: none; }
+a { color: var(--purple); text-decoration: none; transition: color 0.3s ease; }
 a:hover { color: var(--yellow); text-decoration: underline; }
 
 /* ---------- PROJECT CARD STYLE ---------- */
@@ -132,12 +132,8 @@ footer a { color: #fff; text-decoration: underline; }
   outline-offset: 3px;
 }
 
-/* ---------- HIDE AUTO-GENERATED SITE TITLE ---------- */
-.site-title {
-  display: none !important;
-}
-
-/* ---------- FORCE-HIDE TOP NAV TITLE ---------- */
+/* ---------- REMOVE SITE TITLE “lalith-portfolio” ---------- */
+.site-title,
 .masthead .site-title,
 .masthead__inner-wrap .site-title,
 .masthead__menu .site-title {
@@ -147,19 +143,51 @@ footer a { color: #fff; text-decoration: underline; }
   overflow: hidden !important;
 }
 
-
 /* ---------- ENLARGE AUTHOR AVATAR ---------- */
 .author__avatar img {
-  width: 160px !important;     /* default ~100px */
-  height: 160px !important;
+  width: 165px !important;
+  height: 165px !important;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .author__avatar img:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
 }
 
+/* ---------- DYNAMIC MARKDOWN BLOCKS ---------- */
+.page__content {
+  background: linear-gradient(180deg, #faf3e0 0%, #fffdf5 100%);
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.page__content:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- INTERACTIVE QUOTES / NOTES ---------- */
+blockquote, .note {
+  background: #f9fbe7;
+  border-left: 5px solid #4caf50;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  color: #333;
+  transition: background 0.3s ease;
+}
+blockquote:hover { background: #e8f5e9; }
+
+/* ---------- CONTENT FADE-IN ---------- */
+.page__content {
+  animation: fadeIn 0.8s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
