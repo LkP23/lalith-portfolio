@@ -1,5 +1,5 @@
 ---
-title: "About Me"
+title: ""
 layout: single
 classes: wide
 ---
@@ -28,15 +28,7 @@ My research explores **interpretable and privacy-aware AI systems** that improve
 
 ---
 
-## 🔬 Featured Research
-{% include feature_row %}
-{% capture my_projects %}
-- **Deep Learning Food Recommendation System** — CNN + transfer learning using Food-101 and Recipe1M+.  
-- **YOLOv5 Obstacle Detection** — Edge-device deployment and real-time detection.  
-- **Clinical Data Analytics (UNLV)** — Predictive modeling of patient outcomes.  
-- **Biometric ATM Authentication** — Dual-factor system using OpenCV and TensorFlow.  
-{% endcapture %}
-{{ my_projects }}
+
 
 ---
 
