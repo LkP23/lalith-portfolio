@@ -1,14 +1,9 @@
-# ==========================================================
-# Lalith Krishna Prakash Parsa | Academic Portfolio (2025)
-# Teal-Dark Minimal-Mistakes Configuration
-# ==========================================================
-
 title: "Lalith Krishna Prakash Parsa"
 description: "Ph.D. Applicant in Computer Science | AI • Data Analytics • Machine Learning"
 locale: "en-US"
 
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "contrast"
+theme: "minimal-mistakes-jekyll"
+minimal_mistakes_skin: "teal"
 logo: "/assets/profile.jpg"
 repository: "LkP23/lalith-portfolio"
 
@@ -31,18 +26,6 @@ author:
       icon: "fab fa-linkedin"
       url: "https://linkedin.com/in/lalithprakash"
 
-markdown: kramdown
-highlighter: rouge
-permalink: /:categories/:title/
-future: true
-
-include:
-  - "_pages"
-
-collections:
-  pages:
-    output: true
-
 defaults:
   - scope:
       path: ""
@@ -52,9 +35,6 @@ defaults:
       author_profile: false
       sidebar: false
       css: /assets/custom.css
-      read_time: false
-      share: false
-      show_date: false
 
 plugins:
   - jekyll-paginate
@@ -62,17 +42,3 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-include-cache
-  - jekyll-remote-theme
-
-paginate: 5
-paginate_path: "/page:num/"
-
-social:
-  name: "Lalith Krishna Prakash Parsa"
-  links:
-    - "https://github.com/LkP23"
-    - "https://linkedin.com/in/lalithprakash"
-
-search: true
-comments: false
-enable_darkmode: true
