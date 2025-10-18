@@ -8,7 +8,7 @@ locale: "en-US"
 
 # --- THEME ---
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "air"   # other options: default, sunrise, contrast, mint
+minimal_mistakes_skin: "air"   # options: default, air, mint, contrast, sunrise
 logo: "/assets/profile.jpg"
 
 # --- URL ---
@@ -32,12 +32,13 @@ author:
       icon: "fab fa-linkedin"
       url: "https://linkedin.com/in/lalithprakash"
 
-# --- MARKDOWN ---
+# --- MARKDOWN SETTINGS ---
 markdown: kramdown
 highlighter: rouge
 permalink: /:categories/:title/
+future: true
 
-# --- INCLUDE ---
+# --- FOLDERS ---
 include:
   - "_pages"
 
@@ -45,7 +46,7 @@ collections:
   pages:
     output: true
 
-# --- DEFAULTS ---
+# --- DEFAULT PAGE SETTINGS ---
 defaults:
   - scope:
       path: ""
@@ -58,7 +59,6 @@ defaults:
       read_time: false
       share: false
       show_date: false
-      css: /assets/custom.css?v=999
 
 # --- PLUGINS ---
 plugins:
