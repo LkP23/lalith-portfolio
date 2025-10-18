@@ -71,3 +71,9 @@ data_dir: _data
 search: true
 comments: false
 enable_darkmode: true
+
+
+# Custom overrides
+sass:
+  style: compressed
+
