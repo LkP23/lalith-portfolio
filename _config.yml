@@ -1,6 +1,5 @@
 # ==========================================================
 # Lalith Krishna Prakash Parsa | Academic Portfolio (2025)
-# Streamlined Jekyll Config (No index.md or home.md)
 # ==========================================================
 
 title: "Lalith Krishna Prakash Parsa"
@@ -13,7 +12,7 @@ minimal_mistakes_skin: "sunrise"
 
 # --- SITE URL ---
 url: "https://LkP23.github.io"
-baseurl: ""
+baseurl: "/"
 
 # --- AUTHOR INFO ---
 author:
@@ -21,13 +20,7 @@ author:
   avatar: "/assets/profile.jpg"
   bio: "Ph.D. Applicant in Computer Science | AI, Data Analytics, and Machine Learning"
   location: "Dallas, TX, USA"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-github"
-      url: "https://github.com/LkP23"
-    - label: "LinkedIn"
-      icon: "fab fa-linkedin"
-      url: "https://linkedin.com/in/lalithprakash"
+  links: []  # icons hidden by CSS
 
 # --- MARKDOWN SETTINGS ---
 markdown: kramdown
@@ -53,13 +46,19 @@ defaults:
       author_profile: true
       sidebar:
         nav: "main"
-      toc: true
-      toc_label: "On this page"
-      toc_sticky: true
       read_time: false
       share: false
       show_date: false
-      css: /assets/clean.css
+      css: /assets/clean.css?v=5
+
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: single
+      read_time: false
+      share: false
+      show_date: false
 
 # --- PLUGINS ---
 plugins:
@@ -74,33 +73,10 @@ plugins:
 paginate: 5
 paginate_path: "/page:num/"
 
-# --- NAVIGATION MENU (from _data/navigation.yml) ---
+# --- NAVIGATION MENU ---
 data_dir: _data
 
 # --- OPTIONS ---
 search: true
 comments: false
 enable_darkmode: true
-
-# --- EXCLUSIONS (hide unnecessary files like README.md) ---
-exclude:
-  - README.md
-  - node_modules
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - vendor
-
-# --- SEO & META ---
-social:
-  name: "Lalith Krishna Prakash Parsa"
-  links:
-    - "https://github.com/LkP23"
-    - "https://linkedin.com/in/lalithprakash"
-
-# --- FOOTER SETTINGS ---
-footer:
-  links:
-    - label: "Back to Top"
-      icon: "fas fa-arrow-up"
-      url: "#top"
