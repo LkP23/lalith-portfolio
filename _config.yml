@@ -1,20 +1,25 @@
+_config.yaml 
+
 # ==========================================================
 # Lalith Krishna Prakash Parsa | Academic Portfolio (2025)
 # GitHub Pages Configuration for Minimal Mistakes Jekyll
 # ==========================================================
 
-title: ""
-description: ""
+title: "Lalith Krishna Prakash Parsa"
+description: "Ph.D. Applicant in Computer Science | AI • Data Analytics • Machine Learning"
 locale: "en-US"
 
+# --- THEME SETTINGS ---
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "air"    # soft & clean skin
+minimal_mistakes_skin: "sunrise"    # colorful skin, works with light/dark
 logo: "/assets/profile.jpg"
 repository: "LkP23/lalith-portfolio"
 
+# --- SITE URL CONFIG ---
 url: "https://LkP23.github.io"
 baseurl: "/lalith-portfolio"
 
+# --- AUTHOR PROFILE ---
 author:
   name: "Lalith Krishna Prakash Parsa"
   avatar: "/assets/profile.jpg"
@@ -31,11 +36,13 @@ author:
       icon: "fab fa-linkedin"
       url: "https://linkedin.com/in/lalithprakash"
 
+# --- MARKDOWN & BUILD SETTINGS ---
 markdown: kramdown
 highlighter: rouge
 permalink: /:categories/:title/
 future: true
 
+# --- FOLDERS TO INCLUDE ---
 include:
   - "_pages"
 
@@ -43,19 +50,22 @@ collections:
   pages:
     output: true
 
+# --- DEFAULTS FOR ALL PAGES ---
 defaults:
   - scope:
       path: ""
       type: "pages"
     values:
       layout: single
-      author_profile: false
-      sidebar: false
+      author_profile: true
+      sidebar:
+        nav: "main"
       css: /assets/custom.css
       read_time: false
       share: false
       show_date: false
 
+# --- PLUGINS ---
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -64,9 +74,18 @@ plugins:
   - jekyll-include-cache
   - jekyll-remote-theme
 
+# --- PAGINATION SETTINGS ---
 paginate: 5
 paginate_path: "/page:num/"
 
+# --- SEO / SOCIAL LINKS ---
+social:
+  name: "Lalith Krishna Prakash Parsa"
+  links:
+    - "https://github.com/LkP23"
+    - "https://linkedin.com/in/lalithprakash"
+
+# --- OPTIONS ---
 search: true
 comments: false
-enable_darkmode: false
+enable_darkmode: true
