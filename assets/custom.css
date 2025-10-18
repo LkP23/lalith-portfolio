@@ -1,50 +1,194 @@
-/* =========================================================
-   Sticky Top Navigation Bar – Dark/Light Adaptive
-   ========================================================= */
+/* ==========================================================
+   Lalith Krishna Prakash Parsa | Portfolio Custom Styling
+   Modern, academic, color-blind friendly, dark/light adaptive
+   ========================================================== */
 
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  gap: 1.6rem;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  border-bottom: 2px solid var(--blue);
-  padding: 12px 0;
+/* ---------- GLOBAL ---------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+  line-height: 1.75;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* Color Variables (dark + light friendly) */
+:root {
+  --accent: #00b4d8;
+  --accent-light: #90e0ef;
+  --bg-dark: #0d1117;
+  --bg-light: #f5f7fa;
+  --text-dark: #e6edf3;
+  --text-light: #111;
+  --card-bg: #161b22;
+  --border: #1f2a3a;
+}
+
+/* Automatic dark/light mode switch */
+@media (prefers-color-scheme: light) {
+  body {
+    background: var(--bg-light);
+    color: var(--text-light);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--bg-dark);
+    color: var(--text-dark);
+  }
+}
+
+/* ---------- HEADER & NAV ---------- */
+.masthead {
+  background: linear-gradient(90deg, #004e92 0%, #000428 100%);
+  border-bottom: 2px solid var(--accent);
+}
+.masthead__menu-item a {
+  color: #ffffff !important;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.masthead__menu-item a:hover {
+  color: var(--accent-light) !important;
+}
+
+/* Hide redundant title + navigation text inside pages */
+.site-title,
+.page__title,
+.page__meta,
+.page__taxonomy,
+.page__date,
+.page__content > p:first-child a {
+  display: none !important;
+}
+
+/* ---------- SIDEBAR ---------- */
+.sidebar {
+  background: #101823;
+  border-right: 1px solid var(--border);
+}
+.author__avatar img {
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+}
+.author__name {
+  color: var(--accent);
+  font-size: 1.2em;
   font-weight: 600;
-  transition: background 0.4s ease, color 0.4s ease, border 0.4s ease;
+}
+.sidebar .contact-icons a {
+  color: var(--accent);
+}
+.sidebar .contact-icons a:hover {
+  color: var(--accent-light);
 }
 
-/* Dark mode styling */
-@media (prefers-color-scheme: dark) {
-  .navbar {
-    background: rgba(18, 18, 18, 0.85);
-    border-bottom: 2px solid var(--green);
-  }
-}
-
-/* Navbar link styles */
-.navbar a {
-  color: var(--blue);
+/* ---------- LINKS & TEXT ---------- */
+a {
+  color: var(--accent);
   text-decoration: none;
-  font-size: 1.05rem;
-  padding: 4px 8px;
-  border-radius: 4px;
-  transition: all 0.25s ease;
+}
+a:hover {
+  color: var(--accent-light);
+  text-decoration: underline;
 }
 
-.navbar a:hover {
-  color: var(--yellow);
-  background: rgba(21,101,192,0.1);
+h1, h2, h3, h4, h5, h6 {
+  color: var(--accent-light);
+  font-weight: 600;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 4px;
+  margin-top: 1.2em;
 }
 
-/* Dark mode links */
-@media (prefers-color-scheme: dark) {
-  .navbar a { color: var(--text-light); }
-  .navbar a:hover {
-    color: var(--yellow);
-    background: rgba(255,255,255,0.08);
+/* ---------- PROJECT CARDS ---------- */
+.project-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 15px rgba(0, 200, 255, 0.2);
+}
+.project-card img {
+  border-radius: 8px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+/* ---------- HOMEPAGE FEATURE CARDS ---------- */
+.feature__item {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.feature__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 180, 216, 0.4);
+}
+
+/* ---------- FOOTER ---------- */
+.page__footer {
+  background: #000814;
+  color: #adb5bd;
+  border-top: 1px solid var(--border);
+}
+.page__footer a {
+  color: var(--accent);
+}
+.page__footer a:hover {
+  color: var(--accent-light);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .masthead {
+    font-size: 0.9em;
   }
+  .project-card {
+    padding: 12px;
+  }
+  .sidebar {
+    display: none; /* optional: hides sidebar on mobile */
+  }
+}
+
+/* ---------- HOMEPAGE HEADER SPLASH ---------- */
+.page__hero--overlay {
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+.page__hero--overlay .btn {
+  background-color: var(--accent);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+}
+.page__hero--overlay .btn:hover {
+  background-color: var(--accent-light);
+  color: #000;
+}
+
+/* ---------- SCROLLBAR ---------- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #101823;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-light);
 }
