@@ -1,85 +1,65 @@
 # ==========================================================
-# Lalith Krishna Prakash Parsa | Academic Portfolio (2025)
+# Lalith Krishna Prakash Parsa | Portfolio (Primer Theme)
 # ==========================================================
 
 title: "Lalith Krishna Prakash Parsa"
 description: "Ph.D. Applicant in Computer Science | AI • Data Analytics • Machine Learning"
-locale: "en-US"
-
-# --- THEME SETTINGS ---
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "teal"
-
-logo: "/assets/profile.jpg"
-repository: "LkP23/lalith-portfolio"
+theme: jekyll-theme-primer
+locale: en-US
 
 # --- SITE URL CONFIG ---
 url: "https://LkP23.github.io"
 baseurl: "/lalith-portfolio"
 
-# --- AUTHOR PROFILE ---
+# --- AUTHOR INFO ---
 author:
   name: "Lalith Krishna Prakash Parsa"
-  avatar: "/assets/profile.jpg"
-  bio: "Ph.D. Applicant in Computer Science focusing on AI, Data Analytics, and Computer Vision."
-  location: "Dallas, TX, USA"
-  links:
-    - label: "Email"
-      icon: "fas fa-envelope"
-      url: "mailto:lalithprakash46@gmail.com"
-    - label: "GitHub"
-      icon: "fab fa-github"
-      url: "https://github.com/LkP23"
-    - label: "LinkedIn"
-      icon: "fab fa-linkedin"
-      url: "https://linkedin.com/in/lalithprakash"
+  email: "lalithprakash46@gmail.com"
+  github: "https://github.com/LkP23"
+  linkedin: "https://linkedin.com/in/lalithprakash"
+  location: "Plano, Texas, USA"
 
-# --- PLUGINS ---
-plugins:
-  - jekyll-include-cache
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-seo-tag
-
+# --- MARKDOWN SETTINGS ---
 markdown: kramdown
-highlighter: rouge
-permalink: /:title/
+kramdown:
+  input: GFM
+permalink: pretty
 
+# --- FILES & INCLUDES ---
 include:
   - "_pages"
-  - "_data"
+  - "assets"
 
-collections:
-  pages:
-    output: true
-
-# --- NAVIGATION ---
-navigation:
-  - title: "Home"
-    url: "/"
-  - title: "Research"
-    url: "/research/"
-  - title: "Publications"
-    url: "/publications/"
-  - title: "Teaching"
-    url: "/teaching/"
-  - title: "CV"
-    url: "/cv/"
-  - title: "Contact"
-    url: "/contact/"
-
-# --- THEME OVERRIDES ---
+# --- DEFAULT PAGE OPTIONS ---
 defaults:
   - scope:
       path: ""
-      type: "pages"
     values:
-      layout: splash
-      author_profile: false
-      classes: wide
-      header:
-        overlay_color: "#000"
-        overlay_filter: "0.45"
-        overlay_image: "/assets/banner.png"
+      layout: default
       css: "/assets/custom.css"
+
+# --- PLUGINS SUPPORTED BY GITHUB PAGES ---
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# --- SOCIAL & SEO METADATA ---
+social:
+  name: "Lalith Krishna Prakash Parsa"
+  links:
+    - "https://github.com/LkP23"
+    - "https://linkedin.com/in/lalithprakash"
+    - "mailto:lalithprakash46@gmail.com"
+
+favicon: "/assets/favicon.ico"
+logo: "/assets/profile.jpg"
+
+# --- EXCLUDE UNNECESSARY FILES ---
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - "*.log"
