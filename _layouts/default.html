@@ -5,40 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ page.title | default: site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/custom.css?v=2025' | relative_url }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
+  <div class="layout-wrapper">
 
-  <header class="site-header">
-    <div class="container header-flex">
-      <div class="avatar-section">
-        <img src="{{ site.author.avatar }}" alt="Profile Photo" class="avatar">
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="{{ site.author.avatar }}" alt="Profile" class="avatar" />
+        <h2>{{ site.author.name }}</h2>
+        <p class="location"><i class="fa fa-map-marker-alt"></i> {{ site.author.location }}</p>
+        <ul class="links">
+          {% for link in site.author.links %}
+          <li>
+            <a href="{{ link.url }}" target="_blank">
+              <i class="{{ link.icon }}"></i> {{ link.label }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
       </div>
-      <div class="intro-section">
-        <h1>{{ site.author.name }}</h1>
-        <p class="bio">{{ site.author.bio }}</p>
-        <p class="location">{{ site.author.location }}</p>
-      </div>
-    </div>
+    </aside>
 
-    <nav class="nav-bar">
-      <ul>
-        <li><a href="{{ '/' | relative_url }}">Home</a></li>
-        <li><a href="{{ '/_pages/about.html' | relative_url }}">About Me</a></li>
-        <li><a href="{{ '/_pages/research.html' | relative_url }}">Research</a></li>
-        <li><a href="{{ '/_pages/publications.html' | relative_url }}">Publications</a></li>
-        <li><a href="{{ '/_pages/cv.html' | relative_url }}">CV</a></li>
-        <li><a href="{{ '/_pages/contact.html' | relative_url }}">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Main Content -->
+    <main class="content">
+      <header class="page-header">
+        <h1>{{ page.title | default: site.title }}</h1>
+      </header>
 
-  <main class="content-area container">
-    {{ content }}
-  </main>
+      <article class="page-content">
+        {{ content }}
+      </article>
+    </main>
 
-  <footer class="site-footer">
-    <p>© {{ site.time | date: "%Y" }} {{ site.author.name }} | Academic Portfolio</p>
-  </footer>
-
+  </div>
 </body>
 </html>
