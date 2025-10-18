@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ page.title | default: site.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/custom.css?v=1001' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/custom.css?v=2025' | relative_url }}">
 </head>
 <body>
-  <header>
-    <div style="text-align:center; padding:20px;">
-      <img src="{{ site.author.avatar }}" alt="Avatar" style="width:180px;height:180px;border-radius:50%;object-fit:cover;">
-      <h1>{{ site.author.name }}</h1>
-      <p>{{ site.author.bio }}</p>
-      <p>{{ site.author.location }}</p>
+
+  <header class="site-header">
+    <div class="container header-flex">
+      <div class="avatar-section">
+        <img src="{{ site.author.avatar }}" alt="Profile Photo" class="avatar">
+      </div>
+      <div class="intro-section">
+        <h1>{{ site.author.name }}</h1>
+        <p class="bio">{{ site.author.bio }}</p>
+        <p class="location">{{ site.author.location }}</p>
+      </div>
     </div>
+
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/_pages/about.html' | relative_url }}">About Me</a></li>
+        <li><a href="{{ '/_pages/research.html' | relative_url }}">Research</a></li>
+        <li><a href="{{ '/_pages/publications.html' | relative_url }}">Publications</a></li>
+        <li><a href="{{ '/_pages/cv.html' | relative_url }}">CV</a></li>
+        <li><a href="{{ '/_pages/contact.html' | relative_url }}">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="page-content" style="max-width:900px;margin:auto;padding:20px;">
+  <main class="content-area container">
     {{ content }}
   </main>
 
-  <footer style="text-align:center; padding:20px; color:#777;">
-    © {{ site.time | date: '%Y' }} {{ site.author.name }}
+  <footer class="site-footer">
+    <p>© {{ site.time | date: "%Y" }} {{ site.author.name }} | Academic Portfolio</p>
   </footer>
+
 </body>
 </html>
