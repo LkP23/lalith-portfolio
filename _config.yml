@@ -17,11 +17,11 @@ baseurl: "/"
 
 # --- AUTHOR INFO (avatar only) ---
 author:
-  name: ""                     # hide name
-  avatar: "/assets/profile.jpg" # keep only profile image
-  bio: ""                      # hide bio
-  location: ""                 # hide location
-  links: []                    # hide links
+  name: ""
+  avatar: "/assets/profile.jpg"
+  bio: ""
+  location: ""
+  links: []
 
 # --- MARKDOWN SETTINGS ---
 markdown: kramdown
@@ -44,7 +44,7 @@ defaults:
       type: "pages"
     values:
       layout: single
-      author_profile: true        # show only avatar section
+      author_profile: true
       sidebar:
         nav: "main"
       read_time: false
@@ -71,4 +71,3 @@ data_dir: _data
 search: true
 comments: false
 enable_darkmode: true
-
