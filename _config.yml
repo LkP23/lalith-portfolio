@@ -55,9 +55,8 @@ defaults:
       type: "pages"
     values:
       layout: single
-      author_profile: true
-      sidebar:
-        nav: "main"
+      author_profile: false      # disables profile/left sidebar
+      sidebar: false             # turns off sidebar entirely
       css: /assets/custom.css
       read_time: false
       share: false
