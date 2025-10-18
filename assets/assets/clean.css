@@ -1,19 +1,68 @@
-/* Hide unwanted author elements */
-.author__content,
-.author__urls-wrapper,
-.author__urls,
-.author__bio,
-.author__location {
+/* === Profile Sidebar Cleanup === */
+.page__sidebar .author__content,
+.page__sidebar .author__location,
+.page__sidebar .author__urls-wrapper,
+.page__sidebar .author__urls {
   display: none !important;
 }
 
-/* Center and enlarge avatar */
-.author__avatar img {
+/* === Avatar Styling === */
+.page__sidebar .author__avatar img {
   width: 220px !important;
   height: 220px !important;
   border-radius: 50%;
   object-fit: cover;
-  margin: 0 auto;
   display: block;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  border: 3px solid #e3b778; /* accent tone of Sunrise skin */
+}
+
+/* === Layout & Typography Tweaks === */
+body {
+  font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fffaf5;
+  color: #2b2b2b;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+  color: #2b2b2b;
+}
+
+/* === Navigation Bar Styling === */
+.masthead {
+  background-color: #fffaf5;
+  border-bottom: 1px solid #d8b68c;
+}
+
+.masthead__menu-item a {
+  font-weight: 500;
+  color: #333;
+}
+
+.masthead__menu-item a:hover {
+  color: #e68a00;
+}
+
+/* === Section Card Style === */
+.page__content h2 {
+  border-left: 4px solid #e68a00;
+  padding-left: 10px;
+  margin-top: 1.5em;
+}
+
+.page__content {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+/* === Footer === */
+.page__footer {
+  border-top: 1px solid #e3b778;
+  background-color: #fffaf5;
+  color: #555;
 }
