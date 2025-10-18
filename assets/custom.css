@@ -1,6 +1,6 @@
 /* ==========================================================
    Lalith Krishna Prakash Parsa | Portfolio Custom Styling
-   Modern, academic, color-blind friendly, dark/light adaptive
+   Soft-dark soothing teal theme | Modern academic layout
    ========================================================== */
 
 /* ---------- GLOBAL ---------- */
@@ -10,82 +10,76 @@ html {
 
 body {
   font-family: "Inter", "Segoe UI", Roboto, sans-serif;
-  line-height: 1.75;
+  line-height: 1.7;
+  background: #10151b;
+  color: #e8f0f2;
   transition: background 0.4s ease, color 0.4s ease;
 }
 
-/* Color Variables (dark + light friendly) */
+/* Accent palette (teal theme) */
 :root {
-  --accent: #00b4d8;
-  --accent-light: #90e0ef;
-  --bg-dark: #0d1117;
-  --bg-light: #f5f7fa;
-  --text-dark: #e6edf3;
-  --text-light: #111;
-  --card-bg: #161b22;
-  --border: #1f2a3a;
+  --accent: #00b4b6;
+  --accent-light: #5ce1e6;
+  --card-bg: #182028;
+  --border: #27313d;
 }
 
-/* Automatic dark/light mode switch */
-@media (prefers-color-scheme: light) {
-  body {
-    background: var(--bg-light);
-    color: var(--text-light);
-  }
-}
-@media (prefers-color-scheme: dark) {
-  body {
-    background: var(--bg-dark);
-    color: var(--text-dark);
-  }
-}
-
-/* ---------- HEADER & NAV ---------- */
+/* ---------- HEADER & NAVIGATION ---------- */
 .masthead {
-  background: linear-gradient(90deg, #004e92 0%, #000428 100%);
+  background: linear-gradient(90deg, #006d77 0%, #0a3d3f 100%);
   border-bottom: 2px solid var(--accent);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 .masthead__menu-item a {
   color: #ffffff !important;
   font-weight: 500;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
 }
 .masthead__menu-item a:hover {
   color: var(--accent-light) !important;
+  text-decoration: underline;
 }
 
-/* Hide redundant title + navigation text inside pages */
+/* Remove duplicate site title/logo and top text */
 .site-title,
+.site-logo,
 .page__title,
 .page__meta,
 .page__taxonomy,
 .page__date,
-.page__content > p:first-child a {
+.masthead__inner-wrap > a {
   display: none !important;
 }
 
-/* ---------- SIDEBAR ---------- */
-.sidebar {
-  background: #101823;
-  border-right: 1px solid var(--border);
+/* ---------- HOMEPAGE SPLASH ---------- */
+.page__hero--overlay {
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding: 4rem 2rem;
+  text-align: center;
 }
-.author__avatar img {
-  border-radius: 50%;
-  border: 3px solid var(--accent);
-}
-.author__name {
-  color: var(--accent);
-  font-size: 1.2em;
+.page__hero--overlay .btn {
+  background-color: var(--accent);
+  border: none;
+  color: #fff;
   font-weight: 600;
+  border-radius: 6px;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
-.sidebar .contact-icons a {
-  color: var(--accent);
-}
-.sidebar .contact-icons a:hover {
-  color: var(--accent-light);
+.page__hero--overlay .btn:hover {
+  background-color: var(--accent-light);
+  color: #000;
+  transform: translateY(-2px);
 }
 
-/* ---------- LINKS & TEXT ---------- */
+/* ---------- SIDEBAR REMOVAL ---------- */
+.sidebar {
+  display: none !important;
+}
+
+/* ---------- LINKS & HEADINGS ---------- */
 a {
   color: var(--accent);
   text-decoration: none;
@@ -95,7 +89,7 @@ a:hover {
   text-decoration: underline;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
   color: var(--accent-light);
   font-weight: 600;
   border-bottom: 1px solid var(--border);
@@ -108,36 +102,40 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 10px;
-  padding: 20px;
+  padding: 18px;
   margin: 20px 0;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .project-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 4px 15px rgba(0, 200, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 200, 210, 0.25);
 }
 .project-card img {
   border-radius: 8px;
   margin-bottom: 10px;
   width: 100%;
+  height: auto;
 }
 
-/* ---------- HOMEPAGE FEATURE CARDS ---------- */
-.feature__item {
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: 10px;
+/* ---------- RESEARCH PAGE IMAGES ---------- */
+.project-image {
+  width: 100%;
+  max-width: 850px;
+  border-radius: 12px;
+  margin: 15px auto;
+  display: block;
+  box-shadow: 0 4px 15px rgba(0, 180, 186, 0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.feature__item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 15px rgba(0, 180, 216, 0.4);
+.project-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 255, 255, 0.3);
 }
 
 /* ---------- FOOTER ---------- */
 .page__footer {
-  background: #000814;
-  color: #adb5bd;
+  background: #0b1217;
+  color: #b0c7c9;
   border-top: 1px solid var(--border);
 }
 .page__footer a {
@@ -145,6 +143,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 .page__footer a:hover {
   color: var(--accent-light);
+}
+
+/* ---------- SCROLLBAR ---------- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0d1318;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-light);
 }
 
 /* ---------- RESPONSIVE ---------- */
@@ -155,40 +168,4 @@ h1, h2, h3, h4, h5, h6 {
   .project-card {
     padding: 12px;
   }
-  .sidebar {
-    display: none; /* optional: hides sidebar on mobile */
-  }
-}
-
-/* ---------- HOMEPAGE HEADER SPLASH ---------- */
-.page__hero--overlay {
-  background-blend-mode: multiply;
-  background-size: cover;
-  background-position: center;
-  color: #ffffff;
-}
-.page__hero--overlay .btn {
-  background-color: var(--accent);
-  border: none;
-  color: #fff;
-  font-weight: 600;
-}
-.page__hero--overlay .btn:hover {
-  background-color: var(--accent-light);
-  color: #000;
-}
-
-/* ---------- SCROLLBAR ---------- */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  background: #101823;
-}
-::-webkit-scrollbar-thumb {
-  background: var(--accent);
-  border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-light);
 }
