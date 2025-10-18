@@ -9,8 +9,7 @@ author_profile: false
 
 ### Deep Learning–Based Food Recommendation System  
 **Capstone Learning Project, Grand Valley State University**  
-*Jan 2023 – Apr 2023*  
-<img src="{{ '/assets/projects/p1.jpg' | relative_url }}" alt="Food Recommendation" class="project-image">
+*Jan 2023 – Apr 2023*
 
 - Reimplemented a CNN-based food image classifier inspired by public research on Food-101 and Recipe1M+ datasets.  
 - Used TensorFlow to reproduce feature-embedding and similarity-matching approaches from existing literature.  
@@ -25,8 +24,7 @@ author_profile: false
 
 ### Card-less ATM with Biometric Image Input  
 **Undergraduate Final Year Project, CVR College of Engineering**  
-*Aug 2018 – May 2019*  
-<img src="{{ '/assets/projects/p2.jpg' | relative_url }}" alt="Card-less ATM" class="project-image">
+*Aug 2018 – May 2019*
 
 - Implemented a facial-recognition-based ATM authentication prototype referencing open biometric research.  
 - Used OpenCV and TensorFlow to experiment with Haar Cascade and CNN models for real-time facial detection.  
@@ -41,8 +39,7 @@ author_profile: false
 
 ### Obstacle Detection for Autonomous Driving using YOLOv5  
 **Independent Learning Project**  
-*Mar 2022 – Jul 2022*  
-<img src="{{ '/assets/projects/p3.jpg' | relative_url }}" alt="YOLOv5 Object Detection" class="project-image">
+*Mar 2022 – Jul 2022*
 
 - Practiced implementing YOLOv5 object detection using open datasets (BDD100K, COCO).  
 - Studied model configuration and retraining processes from the official YOLOv5 repository.  
@@ -58,8 +55,7 @@ author_profile: false
 ## 📊 DATA ANALYTICS & ENGINEERING PROJECTS
 
 ### Crop Recommendation and Yield Prediction System  
-**Independent Learning Project | Python, Scikit-learn (2023)**  
-<img src="{{ '/assets/projects/p4.jpg' | relative_url }}" alt="Crop Recommendation" class="project-image">
+**Independent Learning Project | Python, Scikit-learn (2023)**
 
 - Reproduced open-source crop-recommendation workflows using Kaggle agricultural datasets.  
 - Compared Decision Tree, Random Forest, and Logistic Regression models for crop suitability.  
@@ -73,8 +69,7 @@ author_profile: false
 ---
 
 ### Cryptocurrency Analysis and Visualization Dashboard  
-**Learning Project | R, Shiny, Plotly (2023)**  
-<img src="{{ '/assets/projects/p5.jpg' | relative_url }}" alt="Crypto Dashboard" class="project-image">
+**Learning Project | R, Shiny, Plotly (2023)**
 
 - Followed public R Shiny tutorials using CoinMarketCap APIs and Kaggle datasets.  
 - Cleaned daily price and volume data with dplyr and converted to time-series using xts.  
@@ -88,8 +83,7 @@ author_profile: false
 ---
 
 ### Netflix User Preferences and Content Trends  
-**Coursework Project | Python, Pandas, K-Means (2022)**  
-<img src="{{ '/assets/projects/p6.jpg' | relative_url }}" alt="Netflix Analysis" class="project-image">
+**Coursework Project | Python, Pandas, K-Means (2022)**
 
 - Used Netflix dataset for exploratory data analysis and unsupervised clustering.  
 - Cleaned metadata (genre, release year, ratings) for consistency.  
@@ -102,8 +96,7 @@ author_profile: false
 ---
 
 ### Video Game Sales Analysis Dashboard  
-**Practice Project | Tableau, Excel (2022)**  
-<img src="{{ '/assets/projects/p7.jpg' | relative_url }}" alt="Video Game Dashboard" class="project-image">
+**Practice Project | Tableau, Excel (2022)**
 
 - Processed global video game sales data from Kaggle in Excel.  
 - Built Tableau dashboards highlighting publishers, genres, and yearly trends.  
@@ -115,8 +108,7 @@ author_profile: false
 ---
 
 ### London Transit Data Warehouse and ELT Pipeline Setup  
-**Learning Experiment | Azure Data Factory, SQL, Python (2021)**  
-<img src="{{ '/assets/projects/p8.jpg' | relative_url }}" alt="London Transit" class="project-image">
+**Learning Experiment | Azure Data Factory, SQL, Python (2021)**
 
 - Designed ELT pipeline using Transport for London datasets.  
 - Configured Azure Data Factory for extraction and staging.  
