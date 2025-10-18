@@ -1,11 +1,16 @@
-title: ""
-description: ""
-theme: jekyll-theme-cayman
+# ─────────────────────────────────────────────
+#  Site Identity
+# ─────────────────────────────────────────────
+title: "Lalith Krishna Prakash Parsa"
+description: "Ph.D. Applicant in Computer Science | AI • Data Analytics • Machine Learning"
 locale: en-US
 
 url: "https://LkP23.github.io"
 baseurl: "/lalith-portfolio"
 
+# ─────────────────────────────────────────────
+#  Author Information
+# ─────────────────────────────────────────────
 author:
   name: "Lalith Krishna Prakash Parsa"
   email: "lalithprakash46@gmail.com"
@@ -13,11 +18,25 @@ author:
   linkedin: "https://linkedin.com/in/lalithprakash"
   location: "Dallas, TX, USA"
 
+# ─────────────────────────────────────────────
+#  Theme & Appearance
+# ─────────────────────────────────────────────
+theme: jekyll-theme-cayman
+favicon: "/assets/favicon.ico"
+logo: "/assets/profile.jpg"
+
+# ─────────────────────────────────────────────
+#  Markdown & Rendering
+# ─────────────────────────────────────────────
 markdown: kramdown
 kramdown:
   input: GFM
+
 permalink: pretty
 
+# ─────────────────────────────────────────────
+#  Directory Includes
+# ─────────────────────────────────────────────
 include:
   - "_pages"
   - "assets"
@@ -29,14 +48,26 @@ defaults:
       layout: default
       css: "/assets/custom.css"
 
+# ─────────────────────────────────────────────
+#  Plugins for GitHub Pages
+# ─────────────────────────────────────────────
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
 
-favicon: "/assets/favicon.ico"
-logo: "/assets/profile.jpg"
+# ─────────────────────────────────────────────
+#  SEO Meta
+# ─────────────────────────────────────────────
+social:
+  name: "Lalith Krishna Prakash Parsa"
+  links:
+    - "https://github.com/LkP23"
+    - "https://linkedin.com/in/lalithprakash"
 
+# ─────────────────────────────────────────────
+#  Build Settings
+# ─────────────────────────────────────────────
 exclude:
   - README.md
   - Gemfile
@@ -44,3 +75,13 @@ exclude:
   - node_modules
   - vendor
   - "*.log"
+  - "*.zip"
+  - "*.tmp"
+
+# ─────────────────────────────────────────────
+#  Customization
+# ─────────────────────────────────────────────
+sass:
+  style: compressed
+
+show_downloads: false
