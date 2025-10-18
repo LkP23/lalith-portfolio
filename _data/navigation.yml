@@ -2,13 +2,15 @@
 # Navigation links for Lalith Krishna Prakash Parsa Portfolio
 # ==========================================================
 
+- title: "Home"
+  url: "/"
 - title: "Research"
-  url: /research/
+  url: "/research/"
 - title: "Publications"
-  url: /publications/
+  url: "/publications/"
 - title: "Teaching"
-  url: /teaching/
+  url: "/teaching/"
 - title: "CV"
-  url: /cv/
+  url: "/cv/"
 - title: "Contact"
-  url: /contact/
+  url: "/contact/"
