@@ -14,7 +14,7 @@ logo: #"/assets/profile.jpg"
 repository: #"LkP23/lalith-portfolio"
 
 # --- SITE URL CONFIGURATION ---
-url: "https://LkP23.github.io"
+url: #"https://LkP23.github.io"
 baseurl: # "/lalith-portfolio"
 
 # --- AUTHOR INFORMATION ---
