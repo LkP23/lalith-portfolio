@@ -1,27 +1,26 @@
 # ==========================================================
 # Lalith Krishna Prakash Parsa | Academic Portfolio (2025)
-# GitHub Pages Jekyll Configuration (Remote Theme)
+# GitHub Pages Jekyll Configuration (Clean Static Version)
 # ==========================================================
 
-title: # "Lalith Krishna Prakash Parsa"
-description: #"Ph.D. Applicant in Computer Science | AI • Data Analytics • Machine Learning"
+title: "Lalith Krishna Prakash Parsa"
+description: "Ph.D. Applicant in Computer Science | AI • Data Analytics • Machine Learning"
 locale: "en-US"
 
 # --- THEME SETTINGS ---
 theme: null
-  # colorful theme with light/dark support
-logo: 
-repository: 
+logo:
+repository:
 
 # --- SITE URL CONFIGURATION ---
-url: #"https://LkP23.github.io"
-baseurl:
+url: "https://LkP23.github.io"
+baseurl: ""
 
 # --- AUTHOR INFORMATION ---
 author:
   name: "Lalith Krishna Prakash Parsa"
   avatar: "/assets/profile.jpg"
-  bio: # "Ph.D. Applicant in Computer Science focusing on AI, Data Analytics, and Computer Vision."
+  bio: "Ph.D. Applicant in Computer Science focusing on AI, Data Analytics, and Computer Vision."
   location: "Dallas, TX, USA"
   links:
     - label: "Email"
@@ -55,7 +54,6 @@ defaults:
     values:
       layout: default
 
-
 # --- PLUGINS ---
 plugins:
   - jekyll-paginate
@@ -63,7 +61,6 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-include-cache
-  - jekyll-remote-theme
 
 # --- PAGINATION SETTINGS ---
 paginate: 5
