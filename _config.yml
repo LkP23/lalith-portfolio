@@ -1,21 +1,28 @@
+# ==========================================================
+# Lalith Krishna Prakash Parsa | Academic Portfolio (2025)
+# GitHub Pages Jekyll Configuration
+# ==========================================================
+
 title: "Lalith Krishna Prakash Parsa"
-description: "Ph.D. Applicant in Computer Science | AI • Data Analytics • Computer Vision"
-theme: "minimal-mistakes-jekyll"
+description: "Ph.D. Applicant in Computer Science | AI • Data Analytics • Machine Learning"
 locale: "en-US"
-minimal_mistakes_skin: "mint"   # Options: air, dark, dirt, mint, neon, sunrise, etc.
+
+# --- THEME SETTINGS ---
+theme: "minimal-mistakes-jekyll"
+minimal_mistakes_skin: "sunrise"     # colorful skin with light/dark adaptation
 logo: "/assets/profile.jpg"
+repository: "LkP23/lalith-portfolio"
 
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-seo-tag
+# --- SITE URL ---
+url: "https://LkP23.github.io"
+baseurl: "/lalith-portfolio"
 
+# --- AUTHOR PROFILE ---
 author:
   name: "Lalith Krishna Prakash Parsa"
   avatar: "/assets/profile.jpg"
   bio: "Ph.D. Applicant in Computer Science focusing on AI, Data Analytics, and Computer Vision."
-  location: "Dallas, TX"
+  location: "Dallas, TX, USA"
   links:
     - label: "Email"
       icon: "fas fa-envelope"
@@ -27,6 +34,21 @@ author:
       icon: "fab fa-linkedin"
       url: "https://linkedin.com/in/lalithprakash"
 
+# --- MARKDOWN & BUILD SETTINGS ---
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+future: true
+
+# --- FOLDERS TO INCLUDE ---
+include:
+  - "_pages"
+
+collections:
+  pages:
+    output: true
+
+# --- DEFAULT PAGE SETTINGS ---
 defaults:
   - scope:
       path: ""
@@ -36,3 +58,31 @@ defaults:
       author_profile: true
       sidebar:
         nav: "main"
+      css: /assets/custom.css
+      read_time: false
+      share: false
+      show_date: false
+
+# --- PLUGINS ---
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-include-cache
+
+# --- PAGINATION ---
+paginate: 5
+paginate_path: "/page:num/"
+
+# --- SEO / SOCIAL META ---
+social:
+  name: "Lalith Krishna Prakash Parsa"
+  links:
+    - "https://github.com/LkP23"
+    - "https://linkedin.com/in/lalithprakash"
+
+# --- OTHER OPTIONS ---
+search: true
+comments: false
+enable_darkmode: true
