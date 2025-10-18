@@ -8,8 +8,8 @@ description: #"Ph.D. Applicant in Computer Science | AI • Data Analytics • M
 locale: "en-US"
 
 # --- THEME SETTINGS ---
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "sunrise"    # colorful theme with light/dark support
+theme: null
+  # colorful theme with light/dark support
 logo: 
 repository: 
 
