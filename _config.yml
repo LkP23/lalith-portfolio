@@ -1,6 +1,6 @@
 # ==========================================================
 # Lalith Krishna Prakash Parsa | Academic Portfolio (2025)
-# GitHub Pages Configuration for Minimal Mistakes Jekyll
+# GitHub Pages Jekyll Configuration (Dark Mode)
 # ==========================================================
 
 title: "Lalith Krishna Prakash Parsa"
@@ -9,7 +9,7 @@ locale: "en-US"
 
 # --- THEME SETTINGS ---
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "sunrise"    # colorful skin, works with light/dark
+minimal_mistakes_skin: "dark"    # Dark modern palette
 logo: "/assets/profile.jpg"
 repository: "LkP23/lalith-portfolio"
 
