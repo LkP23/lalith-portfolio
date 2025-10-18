@@ -1,0 +1,61 @@
+/* === GLOBAL STYLES === */
+body {
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #1f2a44;
+  line-height: 1.7;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #1f2a44, #0b5394);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: #fff !important;
+  letter-spacing: 0.5px;
+}
+
+.navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #ffc107;
+}
+
+.section-title {
+  font-weight: 700;
+  color: #0b5394;
+  text-align: center;
+  margin: 60px 0 30px;
+}
+
+.lead {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+footer {
+  background: #1f2a44;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 60px;
+  font-size: 0.95rem;
+}
