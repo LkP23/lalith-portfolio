@@ -1,61 +1,197 @@
-/* === GLOBAL STYLES === */
+/* ======================================================
+   LALITH KRISHNA PRAKASH PARSA | INTERACTIVE PORTFOLIO
+   Advanced Styling - No HTML edits required
+   ====================================================== */
+
+/* === GLOBAL === */
 body {
-  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
-  background-color: #f5f7fa;
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(180deg, #f8faff 0%, #eef3fa 100%);
   color: #1f2a44;
-  line-height: 1.7;
+  line-height: 1.8;
+  scroll-behavior: smooth;
+  padding-top: 70px;
 }
 
+/* Scrollbar refinement */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #0b5394;
+  border-radius: 10px;
+}
+
+/* === NAVBAR === */
 .navbar {
-  background: linear-gradient(90deg, #1f2a44, #0b5394);
+  background: rgba(15, 45, 90, 0.97);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s;
 }
 
 .navbar-brand {
   font-weight: 700;
   color: #fff !important;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
+  transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.85);
   font-weight: 500;
   transition: 0.3s;
+  position: relative;
 }
 
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active {
-  color: #ffc107;
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: #ffc107;
+  transition: width 0.3s;
 }
 
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+
+/* === HEADINGS === */
 .section-title {
   font-weight: 700;
   color: #0b5394;
   text-align: center;
-  margin: 60px 0 30px;
+  margin: 60px 0 25px;
+  position: relative;
 }
 
-.lead {
-  font-size: 1.1rem;
-  color: #333;
+.section-title::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #0b5394;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
 }
 
+/* === CARD STYLING === */
 .card {
   border: none;
-  border-radius: 12px;
-  background: #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  overflow: hidden;
+  position: relative;
 }
 
 .card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.12);
 }
 
+.card::before {
+  content: "";
+  position: absolute;
+  top: -120%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(11, 83, 148, 0.1), transparent 70%);
+  transform: rotate(25deg);
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+/* === LINKS === */
+a {
+  color: #0b5394;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #073c73;
+  text-decoration: underline;
+}
+
+/* === FOOTER === */
 footer {
-  background: #1f2a44;
+  background: linear-gradient(90deg, #0b5394, #1f2a44);
   color: #fff;
   text-align: center;
-  padding: 15px 0;
-  margin-top: 60px;
+  padding: 16px 0;
+  margin-top: 70px;
   font-size: 0.95rem;
+  letter-spacing: 0.3px;
+  box-shadow: 0 -3px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* === BUTTONS === */
+.btn-primary {
+  background: #0b5394;
+  border: none;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn-primary:hover {
+  background: #093868;
+  transform: translateY(-2px);
+}
+
+/* === HOVER ANIMATIONS === */
+.card img {
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* === TYPOGRAPHY ENHANCEMENT === */
+h1, h2, h3, h4 {
+  letter-spacing: 0.3px;
+}
+
+p, li {
+  font-size: 1.05rem;
+}
+
+/* === SECTION EFFECTS === */
+section.container {
+  animation: fadeInUp 0.8s ease both;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 767px) {
+  .navbar-brand {
+    font-size: 1rem;
+  }
+  .section-title {
+    font-size: 1.5rem;
+  }
+  p, li {
+    font-size: 1rem;
+  }
 }
