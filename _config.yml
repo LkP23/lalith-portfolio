@@ -15,13 +15,13 @@ repository: #"LkP23/lalith-portfolio"
 
 # --- SITE URL CONFIGURATION ---
 url: "https://LkP23.github.io"
-baseurl: "/lalith-portfolio"
+baseurl: # "/lalith-portfolio"
 
 # --- AUTHOR INFORMATION ---
 author:
   name: "Lalith Krishna Prakash Parsa"
   avatar: "/assets/profile.jpg"
-  bio: "Ph.D. Applicant in Computer Science focusing on AI, Data Analytics, and Computer Vision."
+  bio: # "Ph.D. Applicant in Computer Science focusing on AI, Data Analytics, and Computer Vision."
   location: "Dallas, TX, USA"
   links:
     - label: "Email"
