@@ -17,11 +17,11 @@ baseurl: "/"
 
 # --- AUTHOR INFO (avatar only) ---
 author:
-  name: ""
-  avatar: "/assets/profile.jpg"
-  bio: ""
-  location: ""
-  links: []
+  name: ""                      # hide name
+  avatar: "/assets/profile.jpg" # show only profile image
+  bio: ""                       # no text
+  location: ""                  # no location
+  links: []                     # remove icons
 
 # --- MARKDOWN SETTINGS ---
 markdown: kramdown
@@ -51,7 +51,7 @@ defaults:
       share: false
       show_date: false
 
-# --- PLUGINS (GitHub Pages safe) ---
+# --- PLUGINS ---
 plugins:
   - jekyll-remote-theme
   - jekyll-paginate
