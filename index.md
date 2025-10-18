@@ -27,9 +27,4 @@ My research explores **interpretable and privacy-aware AI systems** that improve
 ---
 
 ---
-
-<div align="center">
-  <a href="/research/" class="btn btn--primary">Explore Research</a>
-  <a href="/publications/" class="btn btn--success">View Publications</a>
-  <a href="/cv/" class="btn btn--info">Download CV</a>
-</div>
+#
