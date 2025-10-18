@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/custom.css?v=1001' | relative_url }}">
+</head>
+<body>
+  <header>
+    <div style="text-align:center; padding:20px;">
+      <img src="{{ site.author.avatar }}" alt="Avatar" style="width:180px;height:180px;border-radius:50%;object-fit:cover;">
+      <h1>{{ site.author.name }}</h1>
+      <p>{{ site.author.bio }}</p>
+      <p>{{ site.author.location }}</p>
+    </div>
+  </header>
+
+  <main class="page-content" style="max-width:900px;margin:auto;padding:20px;">
+    {{ content }}
+  </main>
+
+  <footer style="text-align:center; padding:20px; color:#777;">
+    © {{ site.time | date: '%Y' }} {{ site.author.name }}
+  </footer>
+</body>
+</html>
