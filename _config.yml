@@ -11,7 +11,7 @@ locale: "en-US"
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "sunrise"    # colorful theme with light/dark support
 logo: #"/assets/profile.jpg"
-repository: "LkP23/lalith-portfolio"
+repository: #"LkP23/lalith-portfolio"
 
 # --- SITE URL CONFIGURATION ---
 url: "https://LkP23.github.io"
