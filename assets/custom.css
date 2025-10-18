@@ -191,3 +191,26 @@ blockquote:hover { background: #e8f5e9; }
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* ---------- ACCESSIBILITY ---------- */
+:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 3px;
+}
+
+/* ---------- HIDE AUTO-GENERATED SITE TITLE ---------- */
+.site-title {
+  display: none !important;
+}
+
+/* ---------- ENLARGE AUTHOR AVATAR (force override) ---------- */
+.page__sidebar .author__avatar img {
+  max-width: 220px !important;
+  width: 220px !important;
+  height: 220px !important;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: contrast(1.1) saturate(1.1);
+  box-shadow: 0 6px 25px rgba(0,0,0,.35);
+}
+
