@@ -1,45 +1,55 @@
-body {
-  font-family: "Inter", "Segoe UI", Roboto, sans-serif;
-  color: #333;
-  background-color: #f9fbfc;
+/* === Simple Hero === */
+.hero-simple {
+  text-align: center;
+  margin-top: 2rem;
+}
+.hero-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid #00a0a0;
+  object-fit: cover;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+  margin-bottom: 0.8rem;
+}
+.hero-simple h1 {
+  color: #007070;
+  margin-bottom: 0.3rem;
+}
+.tagline {
+  color: #555;
+  font-size: 1rem;
 }
 
-h1 {
-  color: #2C8F99;
+/* === Navigation Tabs === */
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1.8rem auto;
+  flex-wrap: wrap;
 }
-
-a {
-  color: #2C8F99;
-}
-a:hover {
-  color: #4AADA8;
-}
-
-header.site-header {
-  background-color: #e6f4f4;
-}
-
-/* Hide default site title in Cayman header */
-header .site-header .site-title, header .site-header .site-description {
-  display: none;
-}
-
-/* Quick Links table styling */
-table {
-  width: 100%;
-  margin: 2rem 0;
-  border-collapse: collapse;
-}
-table td {
-  padding: 0.8rem;
-  border-bottom: 1px solid #ddd;
-}
-table td a {
+.nav-tabs a {
+  background: #00a0a0;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
   font-weight: 600;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: all 0.2s ease-in-out;
+}
+.nav-tabs a:hover {
+  background: #008888;
+  transform: translateY(-2px);
 }
 
-/* Profile image styling if override needed */
-.profile-circle {
-  border: 3px solid #2C8F99;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+/* === Intro Section === */
+.intro {
+  max-width: 750px;
+  margin: 2rem auto;
+  text-align: center;
+  line-height: 1.7;
+  color: #333;
+  font-size: 1.05rem;
 }
