@@ -2,6 +2,7 @@
 title: "Home"
 layout: home
 author_profile: true
+permalink: /
 ---
 
 # Lalith Krishna Prakash Parsa
@@ -20,4 +21,4 @@ My research explores **interpretable and privacy-aware AI systems** that improve
 - Interpretable Deep Learning  
 - Privacy-Preserving AI  
 - Computer Vision for Healthcare  
-- Data-Centric Machine Learning  
+- Data-Centric Machine Learning
