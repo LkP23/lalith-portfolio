@@ -1,34 +1,46 @@
 ---
 title: "Lalith Krishna Prakash Parsa"
-layout: default
+layout: splash
 permalink: /
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.45"
+  overlay_image: "/assets/profile.jpg"
+  caption: "Lalith Krishna Prakash Parsa | Ph.D. Applicant in Computer Science"
+excerpt: "Artificial Intelligence • Data Analytics • Machine Learning"
 ---
 
-<div style="text-align:center; padding: 40px 20px; background: linear-gradient(135deg, #005fa3 0%, #00838f 100%); color: white; border-radius: 10px;">
-  <img src="{{ '/assets/profile.jpg' | relative_url }}" alt="Profile" style="width: 150px; height:150px; border-radius: 50%; border: 3px solid white; margin-bottom: 15px;">
-  <h1 style="margin: 10px 0;">Lalith Krishna Prakash Parsa</h1>
-  <p style="font-size: 1.1em; margin: 0;">
-    Ph.D. Applicant in Computer Science<br>
-    <em>Artificial Intelligence • Data Analytics • Machine Learning</em>
-  </p>
-</div>
-
-<section style="margin: 50px auto; max-width: 900px; text-align: center;">
+<section style="text-align:center; padding: 40px 15px;">
   <h2>Welcome to My Academic Portfolio</h2>
-  <p style="font-size: 1.05em; color: #333;">
-    I’m <strong>Lalith Krishna Prakash Parsa</strong>, a <strong>Ph.D. Applicant in Computer Science</strong> focusing on
-    <strong>AI, Data Analytics, and Computer Vision</strong>.  
-    This site showcases my academic and professional work — including research, teaching, publications, and career growth.
+  <p style="max-width: 800px; margin: 20px auto; font-size: 1.05em;">
+    I’m <strong>Lalith Krishna Prakash Parsa</strong>, a <strong>Ph.D. Applicant in Computer Science</strong> focusing on 
+    <strong>Artificial Intelligence</strong>, <strong>Data Analytics</strong>, and <strong>Computer Vision</strong>.
+    <br><br>
+    This portfolio highlights my academic and professional journey — research projects, publications, teaching, 
+    and areas of exploration within intelligent systems and data-driven solutions.
   </p>
 </section>
 
-<hr style="margin: 40px auto; width: 75%;">
+<hr style="width:80%; margin: 40px auto;">
 
-<section style="text-align:center; margin-bottom: 40px;">
+<section style="text-align:center;">
   <h2>Research Interests</h2>
-  <p style="max-width: 800px; margin: auto; font-size: 1.05em; color: #222;">
-    My research focuses on <strong>Artificial Intelligence</strong>, <strong>Machine Learning</strong>, and 
-    <strong>Data Analytics</strong> — exploring how data-driven models can support intelligent decision-making, predictive insights, 
-    and automated systems in real-world applications.
+  <p style="max-width: 800px; margin: 20px auto; font-size: 1.05em; color: #333;">
+    My research centers around <strong>AI</strong> and <strong>Machine Learning</strong> for data-driven decision-making, 
+    <strong>computer vision</strong> for real-world automation, and <strong>explainable AI</strong> that bridges 
+    the gap between model interpretability and human understanding.
   </p>
 </section>
+
+<hr style="width:80%; margin: 40px auto;">
+
+<section style="text-align:center; padding-bottom: 40px;">
+  <p>
+    Explore dedicated sections for my <a href="{{ '/research/' | relative_url }}">Research</a>, 
+    <a href="{{ '/publications/' | relative_url }}">Publications</a>, 
+    <a href="{{ '/teaching/' | relative_url }}">Teaching</a>, 
+    <a href="{{ '/cv/' | relative_url }}">Curriculum Vitae</a>, and 
+    <a href="{{ '/contact/' | relative_url }}">Contact</a>.
+  </p>
+</section>
+
