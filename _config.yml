@@ -3,14 +3,14 @@
 # GitHub Pages Jekyll Configuration (Remote Theme)
 # ==========================================================
 
-title: "Lalith Krishna Prakash Parsa"
-description: "Ph.D. Applicant in Computer Science | AI • Data Analytics • Machine Learning"
+title: # "Lalith Krishna Prakash Parsa"
+description: #"Ph.D. Applicant in Computer Science | AI • Data Analytics • Machine Learning"
 locale: "en-US"
 
 # --- THEME SETTINGS ---
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "sunrise"    # colorful theme with light/dark support
-logo: "/assets/profile.jpg"
+logo: #"/assets/profile.jpg"
 repository: "LkP23/lalith-portfolio"
 
 # --- SITE URL CONFIGURATION ---
