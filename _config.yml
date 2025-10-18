@@ -55,10 +55,10 @@ defaults:
       type: "pages"
     values:
       layout: single
-      author_profile: true        # KEEP profile avatar + info
-      sidebar:                    # REMOVE only navigation
+      author_profile: true
+      sidebar:
         nav: false
-      css: /assets/custom.css
+      css: /assets/custom.css?v=999   # <-- paste here
       read_time: false
       share: false
       show_date: false
