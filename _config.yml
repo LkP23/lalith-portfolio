@@ -15,6 +15,14 @@ logo: ""
 url: "https://LkP23.github.io"
 baseurl: "/"
 
+# --- AUTHOR INFO (avatar only) ---
+author:
+  name: ""                     # hide name
+  avatar: "/assets/profile.jpg" # keep only profile image
+  bio: ""                      # hide bio
+  location: ""                 # hide location
+  links: []                    # hide links
+
 # --- MARKDOWN SETTINGS ---
 markdown: kramdown
 highlighter: rouge
@@ -36,7 +44,7 @@ defaults:
       type: "pages"
     values:
       layout: single
-      author_profile: false    # disables sidebar profile
+      author_profile: true        # show only avatar section
       sidebar:
         nav: "main"
       read_time: false
@@ -63,3 +71,4 @@ data_dir: _data
 search: true
 comments: false
 enable_darkmode: true
+
