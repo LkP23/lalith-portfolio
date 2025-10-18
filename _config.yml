@@ -1,5 +1,6 @@
 # ==========================================================
-# Lalith Krishna Prakash Parsa | Portfolio (Primer Theme)
+# Lalith Krishna Prakash Parsa | Academic Portfolio
+# Theme: jekyll-theme-primer (GitHub default)
 # ==========================================================
 
 title: "Lalith Krishna Prakash Parsa"
@@ -7,11 +8,11 @@ description: "Ph.D. Applicant in Computer Science | AI • Data Analytics • Ma
 theme: jekyll-theme-primer
 locale: en-US
 
-# --- SITE URL CONFIG ---
+# ---- Site URLs ----
 url: "https://LkP23.github.io"
 baseurl: "/lalith-portfolio"
 
-# --- AUTHOR INFO ---
+# ---- Author ----
 author:
   name: "Lalith Krishna Prakash Parsa"
   email: "lalithprakash46@gmail.com"
@@ -19,18 +20,18 @@ author:
   linkedin: "https://linkedin.com/in/lalithprakash"
   location: "Plano, Texas, USA"
 
-# --- MARKDOWN SETTINGS ---
+# ---- Markdown ----
 markdown: kramdown
 kramdown:
   input: GFM
 permalink: pretty
 
-# --- FILES & INCLUDES ---
+# ---- Directories ----
 include:
   - "_pages"
   - "assets"
 
-# --- DEFAULT PAGE OPTIONS ---
+# ---- Defaults ----
 defaults:
   - scope:
       path: ""
@@ -38,24 +39,17 @@ defaults:
       layout: default
       css: "/assets/custom.css"
 
-# --- PLUGINS SUPPORTED BY GITHUB PAGES ---
+# ---- Plugins ----
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
 
-# --- SOCIAL & SEO METADATA ---
-social:
-  name: "Lalith Krishna Prakash Parsa"
-  links:
-    - "https://github.com/LkP23"
-    - "https://linkedin.com/in/lalithprakash"
-    - "mailto:lalithprakash46@gmail.com"
-
+# ---- Visuals ----
 favicon: "/assets/favicon.ico"
 logo: "/assets/profile.jpg"
 
-# --- EXCLUDE UNNECESSARY FILES ---
+# ---- Exclusions ----
 exclude:
   - README.md
   - Gemfile
