@@ -1,6 +1,6 @@
 # ==========================================================
 # Lalith Krishna Prakash Parsa | Academic Portfolio (2025)
-# GitHub Pages Jekyll Configuration
+# GitHub Pages Jekyll Configuration (Remote Theme)
 # ==========================================================
 
 title: "Lalith Krishna Prakash Parsa"
@@ -8,16 +8,16 @@ description: "Ph.D. Applicant in Computer Science | AI • Data Analytics • Ma
 locale: "en-US"
 
 # --- THEME SETTINGS ---
-theme: "minimal-mistakes-jekyll"
-minimal_mistakes_skin: "sunrise"     # colorful skin with light/dark adaptation
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "sunrise"    # colorful theme with light/dark support
 logo: "/assets/profile.jpg"
 repository: "LkP23/lalith-portfolio"
 
-# --- SITE URL ---
+# --- SITE URL CONFIGURATION ---
 url: "https://LkP23.github.io"
 baseurl: "/lalith-portfolio"
 
-# --- AUTHOR PROFILE ---
+# --- AUTHOR INFORMATION ---
 author:
   name: "Lalith Krishna Prakash Parsa"
   avatar: "/assets/profile.jpg"
@@ -34,7 +34,7 @@ author:
       icon: "fab fa-linkedin"
       url: "https://linkedin.com/in/lalithprakash"
 
-# --- MARKDOWN & BUILD SETTINGS ---
+# --- MARKDOWN AND BUILD SETTINGS ---
 markdown: kramdown
 highlighter: rouge
 permalink: /:categories/:title/
@@ -48,7 +48,7 @@ collections:
   pages:
     output: true
 
-# --- DEFAULT PAGE SETTINGS ---
+# --- DEFAULTS FOR ALL PAGES ---
 defaults:
   - scope:
       path: ""
@@ -70,19 +70,20 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-include-cache
+  - jekyll-remote-theme
 
-# --- PAGINATION ---
+# --- PAGINATION SETTINGS ---
 paginate: 5
 paginate_path: "/page:num/"
 
-# --- SEO / SOCIAL META ---
+# --- SEO AND SOCIAL LINKS ---
 social:
   name: "Lalith Krishna Prakash Parsa"
   links:
     - "https://github.com/LkP23"
     - "https://linkedin.com/in/lalithprakash"
 
-# --- OTHER OPTIONS ---
+# --- OPTIONS ---
 search: true
 comments: false
 enable_darkmode: true
