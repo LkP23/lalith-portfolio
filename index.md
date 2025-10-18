@@ -1,10 +1,8 @@
 ---
-title: ""
-layout: single
-classes: wide
+title: "Home"
+layout: home
+author_profile: true
 ---
-
-
 
 # Lalith Krishna Prakash Parsa
 **Ph.D. Applicant in Computer Science**  
@@ -23,8 +21,3 @@ My research explores **interpretable and privacy-aware AI systems** that improve
 - Privacy-Preserving AI  
 - Computer Vision for Healthcare  
 - Data-Centric Machine Learning  
-
----
-
----
-
