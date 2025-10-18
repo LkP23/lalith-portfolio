@@ -1,15 +1,15 @@
 # ==========================================================
 # Lalith Krishna Prakash Parsa | Academic Portfolio (2025)
-# Optimized Minimal Mistakes Configuration for Ph.D. Profile
+# Streamlined Jekyll Config (No index.md or home.md)
 # ==========================================================
 
 title: "Lalith Krishna Prakash Parsa"
-description: "Ph.D. Applicant in Computer Science | Artificial Intelligence • Data Analytics • Machine Learning"
+description: "Ph.D. Applicant in Computer Science | AI • Data Analytics • Machine Learning"
 locale: "en-US"
 
 # --- THEME SETTINGS ---
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "sunrise"   # clean academic theme with soft tones
+minimal_mistakes_skin: "sunrise"
 
 # --- SITE URL ---
 url: "https://LkP23.github.io"
@@ -19,12 +19,9 @@ baseurl: ""
 author:
   name: "Lalith Krishna Prakash Parsa"
   avatar: "/assets/profile.jpg"
-  bio: "Ph.D. Applicant in Computer Science focusing on Artificial Intelligence, Data Analytics, and Machine Learning."
+  bio: "Ph.D. Applicant in Computer Science | AI, Data Analytics, and Machine Learning"
   location: "Dallas, TX, USA"
   links:
-    - label: "Email"
-      icon: "fas fa-envelope"
-      url: "mailto:lalithprakash46@gmail.com"
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/LkP23"
@@ -56,12 +53,12 @@ defaults:
       author_profile: true
       sidebar:
         nav: "main"
+      toc: true
+      toc_label: "On this page"
+      toc_sticky: true
       read_time: false
       share: false
       show_date: false
-      toc: true               # show table of contents on long pages
-      toc_label: "On this page"
-      toc_sticky: true
       css: /assets/clean.css
 
 # --- PLUGINS ---
@@ -77,13 +74,22 @@ plugins:
 paginate: 5
 paginate_path: "/page:num/"
 
-# --- NAVIGATION MENU (loaded from _data/navigation.yml) ---
+# --- NAVIGATION MENU (from _data/navigation.yml) ---
 data_dir: _data
 
 # --- OPTIONS ---
 search: true
 comments: false
 enable_darkmode: true
+
+# --- EXCLUSIONS (hide unnecessary files like README.md) ---
+exclude:
+  - README.md
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - vendor
 
 # --- SEO & META ---
 social:
