@@ -43,13 +43,21 @@ defaults:
       type: "pages"
     values:
       layout: single
-      author_profile: true
       sidebar:
         nav: "main"
       read_time: false
       share: false
       show_date: false
       css: /assets/clean.css?v=4
+
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: single
+      read_time: false
+      share: false
+      show_date: false
 
 # --- PLUGINS ---
 plugins:
