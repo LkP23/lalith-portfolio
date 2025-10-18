@@ -131,3 +131,8 @@ footer a { color: #fff; text-decoration: underline; }
   outline: 3px solid var(--yellow);
   outline-offset: 3px;
 }
+
+/* ---------- HIDE AUTO-GENERATED SITE TITLE ---------- */
+.site-title {
+  display: none !important;
+}
