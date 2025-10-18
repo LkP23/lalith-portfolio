@@ -152,3 +152,25 @@ a:hover {
     height: 150px;
   }
 }
+
+
+/* --- Avatar --- */
+.page__sidebar .author__avatar img {
+  width: 220px !important;
+  height: 220px !important;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 6px 25px rgba(0,0,0,.35);
+}
+
+/* --- Background & fonts --- */
+body {
+  background-color: #faf6ef;
+  font-family: "Segoe UI", "Open Sans", sans-serif;
+  color: #222;
+}
+
+/* --- Links --- */
+a { color: #c03; }
+a:hover { text-decoration: underline; }
+
