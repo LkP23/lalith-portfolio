@@ -1,87 +1,38 @@
-# ─────────────────────────────────────────────
-#  Site Identity
-# ─────────────────────────────────────────────
 title: "Lalith Krishna Prakash Parsa"
-description: "Ph.D. Applicant in Computer Science | AI • Data Analytics • Machine Learning"
-locale: en-US
-
-url: "https://LkP23.github.io"
-baseurl: "/lalith-portfolio"
-
-# ─────────────────────────────────────────────
-#  Author Information
-# ─────────────────────────────────────────────
-author:
-  name: "Lalith Krishna Prakash Parsa"
-  email: "lalithprakash46@gmail.com"
-  github: "https://github.com/LkP23"
-  linkedin: "https://linkedin.com/in/lalithprakash"
-  location: "Dallas, TX, USA"
-
-# ─────────────────────────────────────────────
-#  Theme & Appearance
-# ─────────────────────────────────────────────
-theme: jekyll-theme-cayman
-favicon: "/assets/favicon.ico"
+description: "Ph.D. Applicant in Computer Science | AI • Data Analytics • Computer Vision"
+theme: "minimal-mistakes-jekyll"
+locale: "en-US"
+minimal_mistakes_skin: "mint"   # Options: air, dark, dirt, mint, neon, sunrise, etc.
 logo: "/assets/profile.jpg"
 
-# ─────────────────────────────────────────────
-#  Markdown & Rendering
-# ─────────────────────────────────────────────
-markdown: kramdown
-kramdown:
-  input: GFM
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
 
-permalink: pretty
-
-# ─────────────────────────────────────────────
-#  Directory Includes
-# ─────────────────────────────────────────────
-include:
-  - "_pages"
-  - "assets"
+author:
+  name: "Lalith Krishna Prakash Parsa"
+  avatar: "/assets/profile.jpg"
+  bio: "Ph.D. Applicant in Computer Science focusing on AI, Data Analytics, and Computer Vision."
+  location: "Dallas, TX"
+  links:
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:lalithprakash46@gmail.com"
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/LkP23"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://linkedin.com/in/lalithprakash"
 
 defaults:
   - scope:
       path: ""
+      type: "pages"
     values:
-      layout: default
-      css: "/assets/custom.css"
-
-# ─────────────────────────────────────────────
-#  Plugins for GitHub Pages
-# ─────────────────────────────────────────────
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-feed
-
-# ─────────────────────────────────────────────
-#  SEO Meta
-# ─────────────────────────────────────────────
-social:
-  name: "Lalith Krishna Prakash Parsa"
-  links:
-    - "https://github.com/LkP23"
-    - "https://linkedin.com/in/lalithprakash"
-
-# ─────────────────────────────────────────────
-#  Build Settings
-# ─────────────────────────────────────────────
-exclude:
-  - README.md
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
-  - "*.log"
-  - "*.zip"
-  - "*.tmp"
-
-# ─────────────────────────────────────────────
-#  Customization
-# ─────────────────────────────────────────────
-sass:
-  style: compressed
-
-show_downloads: false
+      layout: single
+      author_profile: true
+      sidebar:
+        nav: "main"
