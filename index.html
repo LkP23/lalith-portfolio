@@ -60,26 +60,45 @@ body {
   color: #1f2a44;
   scroll-behavior: smooth;
 }
+
 header {
   background: #1f2a44;
   color: #fff;
 }
+
 header .nav-link {
   color: #fff;
   opacity: .85;
   font-weight: 500;
 }
+
 header .nav-link:hover,
 header .nav-link.active {
   opacity: 1;
   color: #ffc107;
 }
+
 .hero {
-  background: linear-gradient(135deg, #0b5394, #1f2a44);
+  position: relative;
+  background: url("assets/management_networking_portfolio_banner.svg") center center / cover no-repeat;
   color: #fff;
   text-align: center;
-  padding: 80px 20px;
+  padding: 120px 20px;
+  overflow: hidden;
 }
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 35, 65, 0.65);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
 .hero img {
   width: 160px;
   height: 160px;
@@ -87,33 +106,40 @@ header .nav-link.active {
   object-fit: cover;
   box-shadow: 0 4px 20px rgba(0,0,0,0.4);
   margin-bottom: 20px;
+  border: 4px solid rgba(255,255,255,0.9);
 }
+
 .hero h1 {
   font-weight: 700;
   font-size: 2rem;
 }
+
 .hero p {
   font-size: 1.1rem;
   opacity: 0.95;
   margin-bottom: 10px;
 }
+
 .section-title {
   color: #0b5394;
   font-weight: 700;
   text-align: center;
   margin: 60px 0 25px;
 }
+
 .card {
   border: none;
   border-radius: 14px;
   box-shadow: 0 4px 14px rgba(0,0,0,0.08);
 }
+
 .tag-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
 }
+
 .tag-item {
   background: #e9f2fb;
   color: #0b5394;
@@ -122,6 +148,7 @@ header .nav-link.active {
   font-size: 0.95rem;
   font-weight: 500;
 }
+
 footer {
   background: #1f2a44;
   color: #fff;
@@ -129,15 +156,18 @@ footer {
   padding: 12px 0;
   margin-top: 60px;
 }
+
 .social-links a {
   color: #ffc107;
   text-decoration: none;
   margin: 0 10px;
 }
+
 .social-links a:hover {
   color: #fff;
   text-decoration: underline;
 }
+
 .research-interest-box {
   background: #ffffff;
   border-left: 5px solid #0b5394;
@@ -166,8 +196,8 @@ footer {
   <div class="container">
     <img src="assets/profile.jpg" alt="Profile">
     <h1>Lalith Krishna Prakash Parsa</h1>
-    <p>Incoming Ph.D. student in Management at Wayland Baptist University</p>
-    <p>Interested in networks, data, and how technical systems shape business decisions</p>
+    <p>Starting my Ph.D. in Management at Wayland Baptist University</p>
+    <p>Interested in how networks, data, and enterprise systems shape business decisions</p>
     <div class="social-links mt-3">
       <a href="mailto:lalithprakash46@gmail.com">Email</a> |
       <a href="https://github.com/LkP23" target="_blank">GitHub</a> |
